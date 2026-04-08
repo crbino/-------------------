@@ -1,0 +1,1403 @@
+// ============================================================
+// BACKROOMS LORE DATABASE
+// ============================================================
+window.BACKROOMS_DATA = {
+
+// ── LEVELS ──────────────────────────────────────────────────
+levels: [
+  {
+    id: "level-0",
+    name: "Level 0",
+    subtitle: "The Lobby",
+    danger: 2,
+    classification: "Caution",
+    description: "Level 0 is the first level of the Backrooms. It resembles a seemingly endless expanse of mono-yellow wallpaper, damp carpet, and buzzing fluorescent lights. The air carries the stale scent of old moist carpet and the constant, maddening hum of the lights overhead. No two rooms are exactly alike, yet they all feel oppressively identical. Wanderers who noclip through reality most commonly arrive here first. The carpet squelches underfoot with a dampness that never dries, and the wallpaper peels at the edges, revealing blank drywall beneath. Some wanderers have reported finding pockets of different wallpaper patterns — floral, striped, geometric — that seem to mark older or deeper sections of the level. The fluorescent lights flicker at irregular intervals, and approximately one in every hundred is burned out, creating patches of shadow that experienced wanderers learn to avoid.",
+    history: "Level 0 is widely considered the 'ground zero' of the Backrooms, the first level ever documented and the most extensively studied. The earliest known written account dates to an anonymous 4chan post in 2019, though M.E.G. researchers believe humans have been accidentally noclipping into Level 0 for decades, possibly centuries. M.E.G. established their first outpost here in the early days of organized exploration, though it was later abandoned after repeated entity incursions. The Survivors faction maintains the most active presence here now, leaving supply caches and directional markers for new arrivals. Over time, certain sections of Level 0 have been mapped repeatedly, but the layout shifts subtly — corridors stretch, rooms merge, and marked paths become dead ends. No complete map has ever been produced.",
+    atmosphere: "The atmosphere of Level 0 is one of suffocating monotony. The fluorescent lights emit a constant 60Hz hum that becomes maddening over hours of exposure. The air is warm, stagnant, and carries the unmistakable smell of wet carpet that has never been cleaned. Humidity hovers around 80%, making the air feel thick and oppressive. The yellow wallpaper casts a sickly tint over everything, and the uniform lighting creates a sense of timelessness — there is no way to distinguish day from night. Sound travels unpredictably; footsteps echo from impossible directions, and distant thumps suggest movement in rooms you cannot see. The psychological effect is profound — many wanderers describe a creeping sense of being watched, even in seemingly empty rooms.",
+    survivalTips: [
+      "Keep moving. Staying in one place for too long attracts entities.",
+      "Mark your path — the halls loop and disorient.",
+      "If you hear buzzing louder than the fluorescent lights, run.",
+      "Almond Water can be found rarely in this level. Drink it to stay sane.",
+      "Follow the Survivors' symbol system: circles mean safe, X means danger, arrows point to exits.",
+      "The wallpaper pattern can serve as a rough compass — floral patterns tend to appear near transition zones.",
+      "If the fluorescent hum stops completely, you are near a level transition point."
+    ],
+    connections: ["level-1", "level-2", "level-3", "the-hub"],
+    environment: "Indoor",
+    tags: ["canon", "starter", "iconic"],
+    theme: "#c4a84a"
+  },
+  {
+    id: "level-1",
+    name: "Level 1",
+    subtitle: "Habitable Zone",
+    danger: 2,
+    classification: "Caution",
+    description: "Level 1 is an expansive warehouse-like industrial complex. Concrete floors, metal walls, and dim fluorescent lighting define this level. The ceilings stretch high and the corridors feel more open than Level 0, but the space can shift unpredictably. Supplies can occasionally be found here, making it one of the more survivable early levels. M.E.G. maintains several outposts here. The industrial architecture includes loading docks that lead nowhere, conveyor belts that run endlessly carrying nothing, and massive shelving units stocked with unlabeled crates. Some crates contain useful supplies while others are empty or filled with unidentifiable materials. Rusted catwalks span the upper reaches of the larger rooms, providing vantage points but also exposing wanderers to Crawlers that use the ceiling infrastructure.",
+    history: "Level 1 was the second level formally documented by M.E.G. and quickly became a strategic priority due to its supply availability and relative habitability. The first M.E.G. outpost — Outpost Charlie — was established here within weeks of the organization's founding and remains operational. B.N.T.G. followed shortly after, setting up trading posts at key junctions. The Crimson Order attempted to claim large sections of Level 1 in what became known as the 'Corridor Wars,' a months-long territorial conflict that ended in a fragile truce with M.E.G. establishing neutral zones. Multiple mapping expeditions have charted thousands of square kilometers without finding any boundary.",
+    atmosphere: "Level 1 feels like an abandoned industrial district frozen in time. The air is cooler and drier than Level 0, carrying the metallic tang of rust and old machinery. The fluorescent lights here are harsher and more utilitarian, with many sections lit by industrial sodium-vapor lamps that cast an orange-yellow glow. Machinery hums in distant rooms — compressors, generators, conveyor motors — though no one operates them. The echo in the larger warehouse spaces is enormous, making it easy to hear threats approaching but difficult to pinpoint their location. Pipes run along the ceilings and walls, occasionally hissing with steam or gurgling with unknown liquids.",
+    survivalTips: [
+      "Stick to well-lit corridors. Dark sections are more dangerous.",
+      "M.E.G. outposts are scattered throughout — seek them out.",
+      "Do not enter rooms that smell of sulfur.",
+      "Keep noise to a minimum to avoid Hounds.",
+      "Check crates carefully — some contain supplies, others contain traps left by the Crimson Order.",
+      "Catwalks provide good vantage points but leave you exposed. Use them strategically.",
+      "The conveyor belts sometimes carry items from unknown origins. Inspect before touching."
+    ],
+    connections: ["level-0", "level-2", "level-3", "level-4"],
+    environment: "Indoor",
+    tags: ["canon", "habitable"],
+    theme: "#7a8a6a"
+  },
+  {
+    id: "level-2",
+    name: "Level 2",
+    subtitle: "Pipe Dreams",
+    danger: 3,
+    classification: "Unsafe",
+    description: "Level 2 consists of long, dark maintenance tunnels filled with pipes, machinery, and the constant hissing of steam. The temperature is uncomfortably hot, and visibility is limited. The pipes occasionally burst, releasing scalding steam. The darkness here is deeper than other levels, and Smilers lurk in the shadows, their glowing grins the only warning before they strike. The tunnels branch and intersect in a labyrinthine network that seems to serve as the 'infrastructure' beneath other levels. Valve wheels, pressure gauges, and control panels line the walls, most frozen with rust. The floor alternates between metal grating — through which bottomless darkness is visible — and slick concrete sloped for drainage. Puddles of hot condensation collect in low spots, and the walls sweat with moisture.",
+    history: "Level 2 was discovered early in Backrooms exploration but has remained one of the least settled levels due to its extreme conditions. The first expedition was led by a M.E.G. team of seven; only three returned. The tunnels are believed to be the maintenance infrastructure of the Backrooms itself, carrying the pipes and wiring that sustain the fluorescent lights and environmental systems of other levels. Backrooms Robotics has shown particular interest in Level 2, sending automated drones to map the pipe network and study its function. The Crimson Order uses portions of Level 2 as smuggling routes, exploiting the fact that few wanderers willingly enter. Several Reviook nesting sites have been documented, making deep exploration exceptionally dangerous.",
+    atmosphere: "Level 2 is oppressively hot, humid, and dark. Temperatures regularly exceed 38°C (100°F), and the steam from burst pipes can cause severe burns on contact. The constant hissing and clanking of the pipe infrastructure creates a wall of industrial noise that masks approaching threats. Visibility beyond your light source is essentially zero — the darkness swallows light at the edges, creating a claustrophobic bubble of illumination. The smell is a mix of hot metal, rust, and something organic and unpleasant that long-time explorers attribute to Reviook secretions. Condensation drips from every surface, and the humidity is so extreme that electronics often malfunction.",
+    survivalTips: [
+      "Carry a light source at all times.",
+      "If you see a pair of glowing eyes in the dark, do NOT approach — back away slowly.",
+      "Avoid touching the pipes — many are scalding hot.",
+      "The sound of dripping water may lead to safer areas or to traps.",
+      "Metal grating floors mean the space below is open — entities can attack from beneath.",
+      "Firesalt is found naturally in some tunnel walls here. Collect it carefully with dry gloves.",
+      "Steam bursts follow a rough pattern. Listen for the pressure building before a release."
+    ],
+    connections: ["level-1", "level-3", "level-4"],
+    environment: "Indoor",
+    tags: ["canon", "dark", "dangerous"],
+    theme: "#4a5a3a"
+  },
+  {
+    id: "level-3",
+    name: "Level 3",
+    subtitle: "Electrical Station",
+    danger: 3,
+    classification: "Unsafe",
+    description: "Level 3 is an enormous network of electrical rooms, server halls, and utility corridors. The buzzing here is deafening — transformers hum, wires spark, and the lights flicker violently. Exposed wiring poses constant electrocution risks. The level is maze-like and disorienting, with few landmarks. Entities are less common here but the environment itself is the primary threat. Massive circuit breaker panels cover entire walls, their switches toggling on and off by unseen forces. Transformer rooms the size of aircraft hangars contain coils and capacitors that arc with visible electricity. The floors in many areas are covered in a thin layer of water from leaking coolant systems, creating deadly electrocution hazards. Some corridors are completely blocked by tangled masses of cable, requiring backtracking or cutting through with insulated tools.",
+    history: "Level 3 was initially avoided by early explorers due to its extreme environmental hazards. Backrooms Robotics was the first group to conduct systematic exploration, using insulated drones to navigate the electrified corridors. Their research suggests Level 3 is the 'power grid' of the Backrooms, generating and distributing the electricity that powers the fluorescent lights across all levels. A team of Backrooms Robotics engineers attempted to tap into the power grid to create a portable energy source; the resulting surge was felt across three adjacent levels and the team was never found. The painted arrows throughout the level were left by an unknown explorer called 'The Electrician,' whose journal was recovered but whose body was never located. The arrows are mostly reliable, leading toward safer passages.",
+    atmosphere: "The atmosphere of Level 3 is dominated by the overwhelming buzz and crackle of electricity. The sound is not merely loud — it vibrates in your teeth and bones, making prolonged exposure physically uncomfortable. The air smells of ozone and hot metal, with occasional whiffs of burned insulation. Static electricity builds constantly; hair stands on end, clothes cling, and touching metal surfaces produces painful shocks. The lighting is the most erratic of any level — strobing, flickering, surging bright then plunging to near-darkness in unpredictable cycles. Electromagnetic interference makes compasses useless and disrupts electronic devices. The temperature varies wildly between rooms, from near-freezing in coolant corridors to dangerously hot near active transformers.",
+    survivalTips: [
+      "Do not touch any exposed wiring or electrical panels.",
+      "Rubber-soled shoes are essential for survival.",
+      "Follow the painted arrows on walls — they were left by previous explorers.",
+      "If all lights go out simultaneously, freeze and wait.",
+      "Standing water on the floor can be electrified. Test with a non-conductive probe before stepping.",
+      "The Electrician's arrows point to safe paths — red X marks mean electrified dead ends.",
+      "Electromagnetic pulses occur randomly. Keep sensitive equipment shielded in metal containers."
+    ],
+    connections: ["level-1", "level-2", "level-4", "level-5"],
+    environment: "Indoor",
+    tags: ["canon", "electrical", "hazardous"],
+    theme: "#5a6a8a"
+  },
+  {
+    id: "level-4",
+    name: "Level 4",
+    subtitle: "Abandoned Office",
+    danger: 1,
+    classification: "Safe",
+    description: "Level 4 appears as a vast, abandoned office building. Cubicles stretch endlessly, filled with outdated computers, stacked papers, and cold coffee mugs. The fluorescent lighting here is more stable than other levels. This level is considered relatively safe and serves as a common rest stop for wanderers. M.E.G. has established a significant presence here, and Almond Water can be found in vending machines. The office layout follows a corporate structure — reception areas, conference rooms, break rooms, and corner offices — though the company that once occupied this space never existed. Motivational posters on the walls display messages that are subtly wrong: 'Teamwork makes the dream work — you can never leave.' Filing cabinets contain personnel files for employees with no faces in their photos. Printers occasionally activate, printing pages of indecipherable symbols.",
+    history: "Level 4 became the first major settlement hub in the Backrooms after M.E.G. declared it safe enough for extended habitation. The Backrooms Colonists established their first agricultural experiment here, growing crops under fluorescent light in converted conference rooms. B.N.T.G. operates its largest trading post in the former reception lobby of Floor 3. The Eternal Repository maintains a library in the east wing, housing thousands of recovered journals and documents. A significant incident occurred when a group of wanderers discovered a functioning server room that appeared to contain email records from the non-existent company — reading the emails caused temporary psychosis in three researchers. The upper floors (above Floor 12) remain largely unexplored due to heavy Faceling activity and elevator malfunctions.",
+    atmosphere: "Level 4 has the most 'normal' atmosphere of any Backrooms level, which makes its wrongness all the more unsettling. The fluorescent lights are steady and warm-toned. The air conditioning works, maintaining a comfortable temperature. Coffee machines in break rooms produce drinkable coffee. Yet nothing is quite right — the clocks all show different times and none advance, the windows look out onto static grey nothing, and the office chairs are warm as if someone just stood up. The ambient sound is the gentle hum of computers, the distant ringing of phones no one answers, and the soft click of keyboards typing by themselves. It feels like a normal office on a Sunday — empty, waiting, preserved in a moment that never quite ended.",
+    survivalTips: [
+      "This is a good place to rest, but don't get complacent.",
+      "Check vending machines for Almond Water.",
+      "Some computers display useful information if powered on.",
+      "Avoid the top floors — Facelings congregate there.",
+      "The break rooms are the safest spots. Lock the door and rest.",
+      "Personnel files are disturbing but occasionally contain level maps drawn in the margins.",
+      "Do not read the emails on any functioning computer for more than a few minutes."
+    ],
+    connections: ["level-1", "level-3", "level-5", "level-6", "level-11"],
+    environment: "Indoor",
+    tags: ["canon", "safe", "outpost"],
+    theme: "#8a8a7a"
+  },
+  {
+    id: "level-5",
+    name: "Level 5",
+    subtitle: "Terror Hotel",
+    danger: 4,
+    classification: "Hostile",
+    description: "Level 5 is a massive, seemingly infinite hotel. Grand lobbies give way to endless corridors of numbered rooms. The decor is ornate but deeply unsettling — paintings seem to watch you, mirrors reflect things that aren't there, and the elevator never goes where you select. Entities are abundant here, particularly Bellhops and Stalkers. The deeper you go, the more the architecture defies physics. Staircases spiral in directions that shouldn't exist, hallways slope imperceptibly until you realize you've been walking on the ceiling, and room numbers follow no logical sequence — Room 237 might sit between Room 5,000 and Room 3. The Grand Ballroom on the ground floor is perpetually set for a banquet that never happens, with place settings for hundreds and food that looks fresh but crumbles to dust when touched. The concierge desk has a bell that rings on its own.",
+    history: "Level 5 has been a source of fascination and terror since its discovery. The hotel appears to be modeled after grand hotels from the early 20th century — Art Deco styling, brass fixtures, velvet upholstery — but architectural historians note that no real hotel matches its design. The Keymaster appears here frequently, suggesting the level's many locked rooms hold significant value. The Masked Maidens have been observed performing in the Grand Ballroom during what wanderers call 'The Midnight Gala' — an event that occurs irregularly and draws entities from throughout the level into a strange, non-violent gathering. M.E.G. attempted to establish an outpost in Room 555, which was believed to be safe. The outpost was found abandoned with no sign of the three-person team, though their radio continued broadcasting static for weeks afterward.",
+    atmosphere: "The atmosphere of Level 5 is one of decayed elegance and mounting dread. Crystal chandeliers cast warm but insufficient light, leaving the upper corners of rooms in shadow. The carpet is thick burgundy pile that muffles footsteps — yours and anything else's. Music plays faintly from somewhere always just out of reach — big band jazz, waltzes, piano concertos — echoing through corridors in a way that makes the source impossible to locate. The smell alternates between pleasant (fresh flowers, polished wood, clean linen) and deeply wrong (copper, decay, something chemical). Mirrors are everywhere — in hallways, rooms, elevators, the lobby — and wanderers universally report seeing movement in them that doesn't correspond to reality. The deeper into the hotel you venture, the more gravity and geometry become suggestions rather than rules.",
+    survivalTips: [
+      "Never look directly at the paintings for more than a few seconds.",
+      "Do not use the elevators — take the stairs.",
+      "If a door is already open, do not enter that room.",
+      "Room 555 is rumored to be a safe room, but this is unconfirmed.",
+      "Trust nothing that speaks to you from behind closed doors.",
+      "Cover or avoid mirrors whenever possible. They are observation points.",
+      "The Grand Ballroom is neutral ground during Midnight Galas. Any other time, avoid it.",
+      "Room numbers decrease as you approach exits. Follow the pattern."
+    ],
+    connections: ["level-3", "level-4", "level-6", "level-7"],
+    environment: "Indoor",
+    tags: ["canon", "hostile", "hotel"],
+    theme: "#6a3a3a"
+  },
+  {
+    id: "level-6",
+    name: "Level 6",
+    subtitle: "Lights Out",
+    danger: 4,
+    classification: "Hostile",
+    description: "Level 6 is pitch black. No natural or artificial light exists here — only what you bring. The floor is uneven concrete, and the walls seem to breathe. Smilers are extremely prevalent, and the darkness conceals far worse. Sound echoes unpredictably, making it impossible to judge distance. Many wanderers who enter Level 6 are never heard from again. The architecture is impossible to map because it can only be perceived in fragments illuminated by flashlight — a wall here, a corner there, never the full picture. Wanderers describe rooms of vastly different sizes, from closet-like spaces to cathedral-scale voids where your light cannot reach any surface. The concrete floor is cracked and uneven, littered with debris that trips the unwary. Something drips in the darkness — not water, something thicker.",
+    history: "Level 6 is considered one of the deadliest levels in the Backrooms and has claimed more lives than any other single level. M.E.G. classifies it as a 'no-go zone' and officially discourages any expedition. Despite this, the Kalag cult reportedly uses Level 6 as a testing ground for initiates, believing that surviving the darkness proves worthiness for their transformation rituals. Backrooms Robotics sent three camera drones into Level 6; all lost signal within minutes, but the recovered footage from one showed what appeared to be a massive structure deep in the darkness — a building within the void, made of a material that absorbed light. No follow-up expedition has been attempted. A wanderer known only as 'Lightkeeper' is rumored to live permanently in Level 6, maintaining a network of chemical light sources. Their existence is unconfirmed.",
+    atmosphere: "Level 6 is defined by the absolute, crushing absence of light. The darkness is not merely an absence — it feels like a presence, a weight pressing against your skin. Your flashlight beam seems to struggle, as though the darkness actively resists illumination. The air is cold and still, with no detectable airflow, yet you feel things brush past you that you cannot see. Sound is your worst enemy and your only ally — every footstep echoes into infinity, every breath sounds like a shout, and the silence between sounds is filled with the awareness that you are not alone. The walls, when you find them, are damp and slightly warm, and they pulse — a rhythmic expansion and contraction so subtle you think you're imagining it until you press your hand flat and feel it undeniably.",
+    survivalTips: [
+      "Bring multiple light sources with redundant batteries.",
+      "If your light goes out, stand perfectly still and make no sound.",
+      "Smilers cannot attack if you maintain eye contact while backing away.",
+      "The exit is always downward — find stairs leading down.",
+      "Never run. You will trip and your light will break.",
+      "Chemical light sticks are more reliable than battery-powered lights here — the darkness seems to drain batteries faster.",
+      "Travel in pairs minimum. One person watches for Smilers while the other navigates.",
+      "The walls breathing is normal. If the breathing stops, something is between you and the wall."
+    ],
+    connections: ["level-4", "level-5", "level-7", "level-8"],
+    environment: "Indoor",
+    tags: ["canon", "dark", "deadly"],
+    theme: "#1a1a2a"
+  },
+  {
+    id: "level-7",
+    name: "Level 7",
+    subtitle: "Thalassophobia",
+    danger: 4,
+    classification: "Hostile",
+    description: "Level 7 is an infinite ocean of dark, murky water beneath a sunless sky. The water is waist-deep in some areas and bottomless in others. Strange aquatic entities swim beneath the surface, and The Thing on Level 7 — a massive, unseen predator — patrols the deeper waters. Scattered wooden platforms and partially submerged structures offer temporary refuge. The sky is a featureless grey dome with no visible light source, yet enough ambient illumination exists to see. The water is dark green-brown and opaque beyond a few centimeters of depth. Partially submerged buildings — rooftops, radio towers, the upper floors of structures — break the surface at irregular intervals, connected by makeshift bridges of rope and driftwood built by previous wanderers. The water is warm but has an oily, unpleasant texture. Things bump against your legs beneath the surface.",
+    history: "Level 7 was discovered when a group of wanderers fell through a weakened floor in Level 6 and emerged waist-deep in water. Only one of the original four survived to report back to M.E.G. The level has proven nearly impossible to explore systematically due to The Thing — a colossal predator that has destroyed every boat and raft ever launched here. M.E.G. conducted sonar mapping from elevated platforms, revealing water depths exceeding 300 meters in some areas and the presence of submerged structures — entire buildings, roads, and what appear to be vehicles — beneath the surface. The implication that Level 7 is a flooded version of another level (possibly Level 11) remains one of the most debated theories in Backrooms research. A small community of wanderers called the 'Raft People' once lived on interconnected platforms here, but they vanished overnight. Their platforms remain, empty and swaying.",
+    atmosphere: "Level 7's atmosphere is dominated by water and the dread of what lurks within it. The air is heavy with moisture and smells of brine, algae, and something deeper — the organic smell of a living ocean. The grey sky provides flat, shadowless light that makes depth perception unreliable. The water is never fully still; gentle swells and ripples from unseen sources create constant, subtle movement. When The Thing passes nearby, the water becomes glass-smooth — an eerie, preternatural stillness that experienced wanderers recognize as the most dangerous sign in the Backrooms. Below the surface, bioluminescent flashes occasionally illuminate shapes that the mind refuses to fully process. The silence is broken only by lapping water, creaking wood, and distant splashes from things you hope are small.",
+    survivalTips: [
+      "Stay on platforms whenever possible.",
+      "Do not swim in water deeper than your waist.",
+      "If the water becomes unnaturally still, something large is nearby.",
+      "Splashing attracts predators. Move slowly and deliberately.",
+      "Drinking the water here will cause severe hallucinations.",
+      "The Raft People's platform network still exists. Follow the rope bridges between structures.",
+      "Bioluminescent flashes below the surface indicate entity activity. Move to shallow water.",
+      "Rooftop structures provide the safest rest points. Climb as high as possible."
+    ],
+    connections: ["level-5", "level-6", "level-8"],
+    environment: "Aquatic",
+    tags: ["canon", "water", "predator"],
+    theme: "#2a3a5a"
+  },
+  {
+    id: "level-8",
+    name: "Level 8",
+    subtitle: "Cave System",
+    danger: 3,
+    classification: "Unsafe",
+    description: "Level 8 is a vast network of limestone caves, tunnels, and underground rivers. Bioluminescent fungi provide dim, eerie light in patches. The air is cool and damp. While the caves themselves are relatively stable, cave-ins are possible in unstable sections. Various entities make their homes in the deeper caverns, and getting lost is almost guaranteed without careful navigation. The caves range from tight crawlspaces that require belly-crawling to enormous caverns with cathedral ceilings where the bioluminescent fungi create constellations of blue-green light overhead. Stalactites and stalagmites form natural pillars and barriers. Crystal formations in some chambers refract the fungal light into prismatic displays. Underground lakes of perfectly still, clear water dot the deeper sections — their surfaces reflect the ceiling so perfectly that wanderers have walked off ledges thinking the ground continued.",
+    history: "Level 8 was discovered by a B.N.T.G. trader who was fleeing Hounds through Level 2 and fell through a weakened pipe grating into the caves below. The trader survived for two weeks before finding an exit and brought back samples of the bioluminescent fungi that became critical to M.E.G.'s development of Smiler Repellent. Firesalt deposits were first identified here, making Level 8 strategically valuable despite its dangers. M.E.G. and B.N.T.G. jointly fund mining expeditions for Firesalt, with Backrooms Robotics providing automated drilling equipment. The deeper caves remain unmapped. Expeditions beyond what is called the 'Twilight Boundary' — where the fungi become sparse — report hearing rhythmic drumming from somewhere deeper. The Kalag claim these are entity rituals. No expedition past the Twilight Boundary has returned with all members accounted for.",
+    atmosphere: "Level 8's atmosphere is one of ancient, indifferent beauty. The air is cool — around 13°C (55°F) — and carries the clean, mineral smell of limestone and wet rock. The bioluminescent fungi cast everything in a soft blue-green glow that is simultaneously calming and alien. Water drips constantly, creating a natural symphony of plinking sounds that echoes through the chambers. The underground rivers rush through carved channels with surprising force. In the larger caverns, the silence between water sounds is profound — a deep, geological quiet that reminds you of the incomprehensible weight of rock above. The beauty here can be a trap; wanderers often describe a meditative calm that makes them lose track of time and wander deeper than intended.",
+    survivalTips: [
+      "The bioluminescent fungi are safe to use as light markers but toxic if eaten.",
+      "Underground rivers generally flow toward exits.",
+      "Leave markers at every junction — the tunnels look identical.",
+      "Listen for echoes to gauge tunnel size before entering.",
+      "Crystal formations sometimes amplify sound. Use them to detect distant movement.",
+      "Perfectly still underground lakes can disguise deadly drops. Test the edge before approaching.",
+      "Firesalt deposits glow faintly red in the dark. Mine them carefully with dry tools.",
+      "If you hear rhythmic drumming, you have passed the Twilight Boundary. Turn back."
+    ],
+    connections: ["level-6", "level-7", "level-9", "level-10"],
+    environment: "Underground",
+    tags: ["canon", "caves", "natural"],
+    theme: "#4a4a3a"
+  },
+  {
+    id: "level-9",
+    name: "Level 9",
+    subtitle: "The Suburbs",
+    danger: 3,
+    classification: "Unsafe",
+    description: "Level 9 resembles an endless suburban neighborhood frozen in eternal twilight. Cookie-cutter houses line identical streets under a perpetually overcast sky. The houses appear normal from outside but their interiors are wrong — rooms lead to other houses, staircases go nowhere, and furniture is arranged in impossible configurations. Facelings and Skin-Stealers are common here, mimicking residents. Mailboxes contain letters addressed to names that feel familiar but belong to no one. Lawns are mowed to identical heights, hedges trimmed to identical shapes, and the same model of car sits in every fourth driveway. Sprinklers activate on schedule. Street signs display names that evoke nostalgia — Maple Drive, Elm Street, Sunset Lane — though the streets they name shift and reconnect. Children's toys sit on lawns, swings sway on playgrounds, and bicycles lean against fences, but there are no children. There were never any children.",
+    history: "Level 9 provoked intense debate within M.E.G. about the nature of the Backrooms. Researchers argued whether the suburb was modeled on a real place, constructed from collective human memory, or whether it predated human involvement entirely. The Neighborhood Watch entities seem to enforce HOA-style rules from a community that never existed, suggesting the level is a simulation of suburban life created by something that doesn't fully understand the concept. The Backrooms Colonists attempted to settle here, attracted by the functional houses and running water. The settlement lasted three months before Skin-Stealer infiltration made it impossible to distinguish colonists from entities. The evacuation was chaotic, and M.E.G. records indicate that not all evacuees were human. The Followers of Jerry report that Jerry himself has warned wanderers away from settling in Level 9, calling it 'a memory trap.'",
+    atmosphere: "Level 9's atmosphere is the uncanny valley made physical. Everything looks right but feels fundamentally wrong. The twilight sky never darkens or brightens, casting the neighborhood in a permanent blue-grey haze. There is no sun, no moon, no stars. The temperature is mild — a perpetual spring evening. The sounds are suburban sounds: distant lawnmowers, dogs barking (though no dogs are ever seen), wind chimes, the hum of air conditioners. These sounds play on a loop that becomes apparent after several hours. The smell is freshly cut grass, barbecue smoke, and clean laundry — domestic comfort weaponized into wrongness. The houses feel lived-in from outside — curtains in windows, lights in kitchens, the glow of televisions — but entering reveals the performance for what it is. It is a stage set built by something that studied humanity from the outside.",
+    survivalTips: [
+      "Do not enter houses that have lights on — they are traps.",
+      "If someone waves at you from a window, it is not human.",
+      "The streets loop, but pattern changes indicate exits.",
+      "Garages sometimes contain useful supplies.",
+      "If you hear a dinner bell, leave the area immediately.",
+      "Ask strangers specific personal questions. Skin-Stealers struggle with improvisation.",
+      "The neighborhood sounds loop every 47 minutes. Use this to track time.",
+      "Storm drains sometimes lead to Level 2 — a dangerous but viable escape route."
+    ],
+    connections: ["level-8", "level-10", "level-11"],
+    environment: "Outdoor",
+    tags: ["canon", "suburban", "mimics"],
+    theme: "#6a6a5a"
+  },
+  {
+    id: "level-10",
+    name: "Level 10",
+    subtitle: "Field of Wheat",
+    danger: 2,
+    classification: "Caution",
+    description: "Level 10 is an infinite wheat field under a warm, golden sky. A gentle breeze rustles the stalks and the temperature is perpetually comfortable. This level appears peaceful, almost idyllic, but the wheat grows tall enough to conceal entities. The horizon never gets closer no matter how far you walk. At night, the sky turns blood red and the level becomes significantly more dangerous. The wheat is golden and perfectly ripe, standing about two meters tall — enough to completely conceal a standing human. Dirt paths wind through the field, some well-worn and some barely visible, but they don't lead anywhere consistent. Occasional stone structures — wells, low walls, foundations of buildings that no longer exist — break up the monotony. The scarecrows are the most unsettling feature: crude humanoid figures made of wheat stalks and burlap, positioned at irregular intervals. Some wanderers insist they move between observations. During the red sky period, the wheat itself seems to lean toward you, and the scarecrows are always closer than they were before.",
+    history: "Level 10 was discovered by The Lost, who were drawn to its apparently peaceful surface conditions. For a time, it served as a waystation for nomadic wanderers crossing between safer levels. The Backrooms Colonists attempted farming here, reasoning that if the wheat grew naturally, other crops might as well. The experiment partially succeeded — root vegetables could be cultivated in clearings — but the nighttime red sky periods destroyed crops that weren't native to the level. The scarecrows remain unexplained by any faction. M.E.G. researchers who removed a scarecrow from its position found that an identical replacement appeared within hours, and the entity encounters in that area increased dramatically until the original was returned. The Lost now consider the scarecrows guardians and leave offerings at their bases.",
+    atmosphere: "During the golden sky period, Level 10 is arguably the most pleasant place in the Backrooms. Warm sunlight filters through the wheat, creating a honey-colored dreamscape. The breeze carries the sweet, dusty smell of grain and dry earth. Insects that resemble grasshoppers and crickets sing in the stalks. The sound of wind through wheat is constant and soothing, creating a white noise that calms frayed nerves. But the beauty is a mask. The horizon's unreachability creates a subtle but growing existential anxiety — the feeling of being on a treadmill, moving without progressing. When the transition to red sky begins, the warmth becomes heat, the pleasant breeze becomes a hot wind, the insect songs stop abruptly, and the wheat stalks begin to whisper in a language that is almost — but not quite — understandable. The red sky period is primal terror disguised as a sunset that never ends.",
+    survivalTips: [
+      "Travel only during the golden daylight period.",
+      "When the sky begins to redden, find shelter immediately.",
+      "The wheat can be eaten safely but provides no nutrition.",
+      "Clearings in the wheat sometimes contain useful items.",
+      "Strange scarecrows mark boundaries — do not cross past them.",
+      "Stone structures offer the best shelter during red sky periods. Barricade the doorways.",
+      "Do not remove or damage scarecrows. The consequences are severe and swift.",
+      "The day/night cycle lasts approximately 18 hours golden, 6 hours red. Plan accordingly."
+    ],
+    connections: ["level-8", "level-9", "level-11"],
+    environment: "Outdoor",
+    tags: ["canon", "field", "deceptive"],
+    theme: "#b8a84a"
+  },
+  {
+    id: "level-11",
+    name: "Level 11",
+    subtitle: "The City",
+    danger: 1,
+    classification: "Safe",
+    description: "Level 11 is an infinite, empty city under a perpetually blue sky with no sun. Modern buildings, streets, sidewalks, and parks stretch endlessly. No vehicles move and no people are seen, yet the city feels recently abandoned — fresh food sits in restaurants, TVs play static in apartments, and streetlights work. This is one of the safest levels and a major M.E.G. hub. Many wanderers choose to settle here permanently. The architecture is modern and varied — glass office towers, brownstone apartments, shopping centers, parks with functional fountains, libraries with books on their shelves. Traffic lights cycle through their patterns for intersections with no cars. Newspapers in stands are dated to days that don't exist. The city has distinct neighborhoods that wanderers have named: the Financial District, Old Town, the Marina (which borders a concrete-lined canal with no water), and Residential Heights. The further you walk from the center, the more the buildings show signs of decay — not ruin, just neglect, as if the city is newer at its core and older at its edges.",
+    history: "Level 11 is the crown jewel of Backrooms civilization. M.E.G. Base Alpha — the organization's headquarters — is located in a repurposed city hall building near the center of the explored area. B.N.T.G. operates the Grand Market in a former department store. The Backrooms Colonists have established the largest permanent settlement in the Backrooms here, with functioning farms in the city parks, water purification systems in the canal infrastructure, and a population of over 200 permanent residents. The Eternal Repository's main library occupies a former public library. Backrooms Robotics maintains their primary workshop in a converted warehouse in the industrial district. Level 11 is not without controversy — The Unbound view the settlement as an abomination, an attempt to recreate the Frontrooms rather than accepting the Backrooms' reality. They have launched three attacks on Base Alpha, all repelled but each one probing defenses further. The red X buildings are quarantine zones established after entities were found emerging from them unpredictably.",
+    atmosphere: "Level 11 feels like the last beautiful day in a city that everyone left yesterday. The sky is cloudless and a vivid, perfect blue — too perfect, too uniform, like a painted ceiling. The temperature is a constant 22°C (72°F) with a gentle breeze that carries no pollen, no pollution, no scent of a living city. The silence is the most striking feature — no traffic, no voices, no aircraft overhead, no distant music. Just wind between buildings, the tick of traffic lights, and the hum of electricity. At night (the sky darkens to a deep blue but never black, and no stars appear), the streetlights illuminate empty sidewalks with warm sodium glow, and the lit windows of uninhabited apartments create the illusion of a city that is merely sleeping. It is beautiful and desperately lonely. Many wanderers who settle here eventually admit that the emptiness feels heavier than the dangers of other levels.",
+    survivalTips: [
+      "Explore freely but stay aware of your surroundings.",
+      "M.E.G. Base Alpha is located here — seek it out.",
+      "The food in restaurants is safe to eat.",
+      "Do not enter buildings marked with red X symbols.",
+      "The city's layout shifts slowly — landmarks may move overnight.",
+      "The Grand Market in the B.N.T.G. district is the best place to trade supplies.",
+      "The further from center you travel, the more unstable the level becomes.",
+      "Nighttime is safe but the psychological toll of an empty, lit city is significant. Stay social."
+    ],
+    connections: ["level-4", "level-9", "level-10", "the-hub"],
+    environment: "Outdoor",
+    tags: ["canon", "safe", "city", "hub"],
+    theme: "#5a7a9a"
+  },
+  {
+    id: "level-13",
+    name: "Level 13",
+    subtitle: "The Infinite Apartments",
+    danger: 3,
+    classification: "Unsafe",
+    description: "Level 13 is an enormous apartment complex that stretches infinitely in all directions. Identical doors line endless hallways with flickering overhead lights. Most apartments are empty, but some contain remnants of previous inhabitants — photos of people who don't exist, journals written in unknown languages, and televisions playing distorted broadcasts. The level has a crushing sense of loneliness that wears on mental health over time. The hallways are carpeted in faded, stained patterns and lit by buzzing compact fluorescents that give everything a sickly pallor. Peepholes in doors occasionally glow from within. Elevators exist but only travel between random floors. The apartments themselves range from spartan studios to sprawling multi-bedroom units, each decorated in a different decade's style — 1970s wood paneling, 1990s pastels, 2000s minimalism — as though the building has existed across all of time simultaneously. Mailboxes in the lobby are stuffed with letters that are never collected.",
+    history: "Level 13 was first documented by a wanderer who entered through a door in Level 9 that she believed led to a house's basement. The Eternal Repository has collected over 300 journals from Level 13 apartments, many of which appear to be written by wanderers who lived here in isolation for years. Some journals describe the level in earlier states — fewer entities, clearer TV signals, working phone lines that connected to other apartments. This suggests Level 13 is degrading over time, becoming more hostile and more isolating. Partygoer incursions from Level Fun occur through certain apartments, making entire floors dangerous without warning. M.E.G. has a small, unofficial listening post on Floor 42 where researchers monitor the TV broadcasts, which they believe contain encoded information about the Backrooms' structure. The broadcasts have predicted level shifts and entity migrations with unsettling accuracy.",
+    atmosphere: "The atmosphere of Level 13 is one of profound, soul-crushing isolation. The hallways are quiet except for the hum of lights and the muffled sounds that leak through apartment walls — televisions, music, conversations in languages you almost recognize. The air smells of stale cooking, old carpet, and the vague chemical scent of cleaning products. Each apartment tells a story of someone who lived here, alone, for a long time. Dishes are stacked in sinks, beds are unmade, diaries sit open on desks. But there is no one here now. The loneliness is not merely the absence of people — it is an active force, a weight that presses on your chest and makes you question whether anyone is real, whether you are real, whether you were always here and everything else was the dream. Wanderers who spend more than a week in Level 13 report hearing their own name whispered through the walls.",
+    survivalTips: [
+      "Apartments with blue doors are generally safe to rest in.",
+      "If you hear a TV playing clearly, leave that floor.",
+      "Journals found here may contain useful level information.",
+      "Do not answer if someone knocks on your door.",
+      "Mark which floor you're on — the staircases shift.",
+      "The M.E.G. listening post on Floor 42 can provide updated entity movement reports.",
+      "Apartments with 1970s decor tend to be older and more stable. Prefer these for rest.",
+      "If you begin hearing your own name, leave the level within 24 hours or risk permanent psychological damage."
+    ],
+    connections: ["level-9", "level-5", "level-14"],
+    environment: "Indoor",
+    tags: ["community", "apartments", "psychological"],
+    theme: "#5a5a6a"
+  },
+  {
+    id: "level-14",
+    name: "Level 14",
+    subtitle: "Paradise",
+    danger: 2,
+    classification: "Caution",
+    description: "Level 14 appears as a tropical paradise — white sand beaches, crystal-clear water, and lush vegetation under a warm sun. It seems perfect, almost too perfect. The beauty masks subtle wrongness: the sun never moves, the waves have no rhythm, and the trees bear fruit that tastes like nothing. Prolonged stay causes an overwhelming desire to remain forever, a compulsion that many wanderers cannot resist. Those who stay too long become part of the level. The beach stretches infinitely in both directions, curving gently as though following the edge of an impossibly large island. Inland, tropical forests grow dense with palms, flowering vines, and trees heavy with colorless fruit. Hammocks hang between trees as though someone set them up for you. Beach chairs and umbrellas dot the shoreline. Small bungalows with thatched roofs appear at convenient intervals, furnished with soft beds and running fresh water. Everything is designed to make you stay. The sand is warm, the water is perfect, and the first wanderer to realize something was wrong had already been here for a week.",
+    history: "Level 14 was discovered by a group of four wanderers escaping Level 13's crushing isolation. The paradise seemed like a reward — a respite from the horrors of the Backrooms. Three of the four refused to leave after 72 hours. The fourth, a M.E.G. researcher, forcibly extracted one companion and fled; the other two were never recovered. M.E.G. has since classified Level 14 as a 'psychological capture zone' and requires any sanctioned visit to include a mandatory extraction partner and a hard 36-hour time limit. Despite warnings, wanderers continue to enter voluntarily, drawn by rumors of peace and beauty. The Followers of Jerry report that Jerry has never been seen in Level 14, which they interpret as confirmation that the level is fundamentally dangerous despite its appearance. Theories suggest that the level feeds on contentment — the more at peace you feel, the stronger its hold becomes.",
+    atmosphere: "The atmosphere of Level 14 is weaponized perfection. The temperature is exactly what you find most comfortable. The sun warms without burning. The water is precisely the right coolness for swimming. The breeze carries the scent of tropical flowers you can't name but that smell like happiness. Birdsong plays from the forest — melodic, beautiful, and on a loop, though you won't notice the loop for days. The wrongness is subtle and insidious: shadows don't move because the sun is fixed, waves break on the shore but never follow tidal patterns, and the fruit has texture and appearance but delivers no flavor or calories. The level is anesthesia given form. The longer you stay, the less you notice the wrongness, the less you remember why you would want to be anywhere else, the less you remember that 'anywhere else' exists at all.",
+    survivalTips: [
+      "Set a timer. Do not stay longer than 48 hours.",
+      "The fruit and water are safe but create psychological dependency.",
+      "If you stop wanting to leave, you've already stayed too long.",
+      "Travel with a partner who can pull you away if needed.",
+      "The exit is always in the direction you least want to go.",
+      "Write your reason for leaving on your arm in permanent marker before entering.",
+      "Deliberately focus on unpleasant memories to counteract the level's compulsion.",
+      "The bungalows are the strongest trap. Do not sleep in them."
+    ],
+    connections: ["level-13", "level-11", "level-10"],
+    environment: "Outdoor",
+    tags: ["community", "paradise", "psychological", "trap"],
+    theme: "#4aa87a"
+  },
+  {
+    id: "level-33",
+    name: "Level 33",
+    subtitle: "The Megapool",
+    danger: 3,
+    classification: "Unsafe",
+    description: "Level 33 is an impossibly large indoor water park and pool complex. Olympic-sized pools, lazy rivers, and water slides stretch across an enormous facility with high vaulted ceilings. The water is chlorine-blue and perfectly clear, but bottomless in places. The pool deck is always wet and slippery. Lifeguard chairs sit empty. The distant sound of children laughing echoes from nowhere, and something moves beneath the surface of the deeper pools. The facility includes wave pools that activate without warning, diving platforms over pools of unknown depth, and a lazy river that meanders through tunnels where the lighting dims to near-darkness. Changing rooms contain rows of identical lockers, some locked, some containing towels and swimwear from no identifiable brand. A snack bar serves nothing but is fully stocked with packaged food that crumbles to dust when opened. Timing clocks on the walls count upward from zero, each showing a different time. The most unsettling feature is the lane lines in the Olympic pools — they sway as though disturbed by a swimmer, but the water above them is still.",
+    history: "Level 33 was discovered by accident when a wanderer on Level 7 climbed a partially submerged structure and emerged through a drain grate into the pool complex. The level's connection to aquatic levels (particularly Level 7 and Level 37) led M.E.G. to theorize a 'water network' within the Backrooms linking all aquatic and semi-aquatic levels. B.N.T.G. briefly operated a rest stop in the lobby area, but abandoned it after a trader was pulled into a deep pool by an unseen force. The children's laughter has been analyzed by M.E.G. audio specialists — it contains no recognizable language or individual voices, but triggers deep nostalgic responses in all listeners. Some researchers believe it is the level itself, calling wanderers toward the water. The water slides have been partially mapped; three connect to Level 37, one leads to an unexplored aquatic space, and two appear to loop back into Level 33 at different locations.",
+    atmosphere: "The atmosphere of Level 33 is chlorine-soaked nostalgia tinged with wrongness. The air is warm and humid, heavy with the sharp chemical smell of pool chlorine that stings the eyes and throat. Sounds echo enormously in the vaulted space — splashes, the slap of wet feet on tile, the gurgle of filters, and always the distant laughter. The lighting is bright and institutional, bouncing off the water surfaces to create rippling reflections on the ceiling. The pool deck tiles are white and blue in cheerful patterns. Everything about the space says 'fun' and 'family' and 'summer' — but there are no families, no lifeguards, no attendants. The emptiness of a place designed for crowds creates a unique form of dread. The water is inviting in the way a pitcher plant is inviting to an insect. The deeper pools are the worst: perfectly clear water over a depth that your eyes cannot fathom, with shapes moving in the blue distance below.",
+    survivalTips: [
+      "Do not dive into any pool — you cannot know the depth.",
+      "The shallow wading pools are safest.",
+      "If the laughter stops, exit the water immediately.",
+      "Water slides sometimes connect to other levels.",
+      "The pool house contains Almond Water in the vending machines.",
+      "Wave pools activate without warning. Stay near the edges where you can grab the wall.",
+      "The lazy river tunnels go dark in sections. Have a light source ready.",
+      "Lane lines moving in still water means something is directly below you."
+    ],
+    connections: ["level-37", "level-7", "level-8"],
+    environment: "Indoor",
+    tags: ["community", "pool", "water"],
+    theme: "#3a7a9a"
+  },
+  {
+    id: "level-37",
+    name: "Level 37",
+    subtitle: "Poolrooms",
+    danger: 1,
+    classification: "Safe",
+    description: "Level 37, the famous Poolrooms, is an infinite series of interconnected rooms filled with warm, shallow water and bathed in soft, dreamlike light. The water is always shin-deep and comfortably warm. White tiles line every surface, and the lighting shifts between soft blues, purples, and golds. There is an overwhelming sense of peace and nostalgia here. This level is considered one of the safest in the Backrooms and is beloved by wanderers as a place of rest. The rooms vary in size from small chambers barely large enough for one person to vast halls with columns and archways. Some rooms feature steps leading to raised platforms above the water, perfect for sleeping. The tile patterns are mostly white but occasionally include mosaics in blue, green, and gold that depict abstract flowing patterns. The water flows gently between rooms through open doorways, creating soft current sounds. Some wanderers have found rooms with deeper water — waist-deep pools with smooth tile bottoms perfect for swimming. The light has no visible source, emanating from the walls and water themselves.",
+    history: "Level 37 is perhaps the most psychologically important level in the Backrooms. Its discovery caused a sensation among wanderers, many of whom had never experienced genuine safety or comfort since their arrival. B.N.T.G. was the first to establish a trading post here, followed quickly by the Survivors and the Backrooms Colonists. The Poolrooms became a de facto neutral zone where even hostile factions refrain from violence — an unspoken truce that has held since the level's discovery. M.E.G. has studied the water extensively and confirmed it is clean, mineral-rich, and has mild restorative properties similar to diluted Almond Water. The source of the water is unknown — it flows but never accumulates or drains. The red light events are the only documented danger, occurring approximately once every 200 hours. Rooms that turn red become uncomfortably hot and the water turns acidic. The effect passes within an hour, but burns from red-room water can be severe.",
+    atmosphere: "The Poolrooms feel like a memory of somewhere you've never been but always wanted to go. The air is warm, humid, and carries the faint mineral scent of clean hot springs. Every surface gleams with moisture. The lighting creates a perpetual golden-hour glow that softens edges and makes everything feel dreamlike. Sound is muffled — footsteps splash softly, voices carry as gentle echoes, and the constant quiet flow of water creates a natural white noise that soothes the nervous system. The emotional effect is immediate and profound: anxiety fades, muscles unclench, and the hypervigilance that keeps you alive in other levels melts away. This is both the gift and the potential danger of Level 37 — it is so comfortable that some wanderers lose the will to continue their journey, choosing instead to stay in the warm water and soft light forever. The Poolrooms are a sanctuary, but sanctuaries can become prisons if you forget there is a world beyond their walls.",
+    survivalTips: [
+      "This level is genuinely safe. Rest here.",
+      "The water is clean and drinkable.",
+      "Deeper rooms have warmer water and softer lighting.",
+      "If the light turns red, move to a different room.",
+      "Enjoy the peace — you've earned it.",
+      "Raised platforms make excellent sleeping spots above the water line.",
+      "Red light events last about an hour. Evacuate the affected room and wait.",
+      "Don't lose yourself here. Set a departure time and honor it."
+    ],
+    connections: ["level-33", "level-0", "level-11"],
+    environment: "Indoor",
+    tags: ["community", "pool", "safe", "iconic", "liminal"],
+    theme: "#6a8aaa"
+  },
+  {
+    id: "level-94",
+    name: "Level 94",
+    subtitle: "Motion",
+    danger: 3,
+    classification: "Unsafe",
+    description: "Level 94 is a vast freeway system stretching through an infinite, empty landscape. Abandoned cars litter the highways, and the road extends forever in every direction. The sky is a permanent dusk orange. If you stop moving for more than a few minutes, the ground begins to crack and give way beneath you. Motion is survival here — you must always keep walking, running, or driving. The faster you move, the safer you are. The highway system includes multi-lane freeways, cloverleaf interchanges, overpasses, and off-ramps. Road signs display destinations that don't exist: 'NOWHERE 47 mi,' 'HOME ???,' 'KEEP GOING.' The abandoned vehicles range from modern sedans to vintage trucks, many with personal belongings inside — suitcases, children's car seats, road trip snacks. Some cars have keys in the ignition. The landscape beyond the highway shoulders is flat, featureless desert extending to the horizon. No structures, no vegetation, just cracked earth under the orange sky. Rest stops exist but provide no actual rest — stopping in them triggers the cracking faster.",
+    history: "Level 94 was discovered by a wanderer who walked through a parking garage in Level 11 and emerged on an on-ramp. The level's lethal 'standstill mechanic' was identified after the first three explorers were lost — they stopped to rest and the ground consumed them. M.E.G. has been unable to establish any permanent presence due to the movement requirement. B.N.T.G. traders occasionally use Level 94 as a rapid transit route between connected levels, traveling in operational vehicles at high speed. Backrooms Robotics designed an autonomous vehicle specifically for Level 94 exploration, which mapped over 2,000 kilometers of highway before its fuel ran out and the cracking destroyed it. The data it transmitted revealed that the highway system forms a massive, irregular loop — but the loop takes so long to complete that no human has ever driven it fully. Gas stations exist at random intervals but only one in ten actually has fuel.",
+    atmosphere: "Level 94's atmosphere is one of relentless urgency and road-trip dread. The orange dusk sky creates a permanent twilight that is simultaneously beautiful and oppressive — a sunset that never resolves. The air is dry, warm, and carries the smell of hot asphalt, exhaust fumes, and desert dust. The only sounds are your footsteps, the wind across the open highway, and the occasional creak of an abandoned car settling. When the cracking begins, it starts as a low grinding sound beneath your feet, followed by visible fractures in the asphalt that spread outward from where you stand. The deeper you look into the cracks, the more you see — not earth beneath the road, but void, an orange-lit nothingness. The psychological toll of perpetual motion is severe: your body demands rest that the level will not permit, creating a nightmarish endurance test where stopping means death.",
+    survivalTips: [
+      "Never stop moving. Ever.",
+      "Some cars have fuel — hotwire them if you can.",
+      "The breakdown lane is slightly safer than the main road.",
+      "If cracks form beneath you, sprint.",
+      "Exits are marked by green signs, but most are false.",
+      "Gas stations with working pumps have a faint humming sound. Listen for it.",
+      "Walking speed is sufficient to prevent cracking, but barely. A jog is safer.",
+      "Sleep in a moving vehicle with a partner driving, or not at all."
+    ],
+    connections: ["level-11", "level-10", "level-188"],
+    environment: "Outdoor",
+    tags: ["community", "highway", "movement"],
+    theme: "#9a6a3a"
+  },
+  {
+    id: "level-188",
+    name: "Level 188",
+    subtitle: "The Windows",
+    danger: 2,
+    classification: "Caution",
+    description: "Level 188 is an infinite hallway lined with floor-to-ceiling windows on both sides. Through the windows, wanderers can see locations from their memories — childhood homes, favorite places, loved ones. The scenes are perfect recreations but they are not real. Breaking a window causes the scene behind it to shatter into darkness. The hallway is peaceful but deeply melancholic, and many wanderers are driven to despair by what they see but cannot reach. The hallway itself is wide enough for two people to walk abreast, floored in polished hardwood and lit by soft overhead fixtures. The windows are set in dark wooden frames, and each pane is flawless — no distortion, no reflection, just a clear view into a scene that exists only for the person looking at it. Two wanderers standing before the same window see entirely different scenes. Benches are placed at intervals, inviting you to sit and watch your memories play out. Some windows show moving scenes — family dinners, birthday parties, quiet mornings — while others are frozen moments, photographs made three-dimensional.",
+    history: "Level 188 was first documented by a Masked Maidens performance that M.E.G. interpreted as directions to its entrance. The level immediately became one of the most emotionally impactful discoveries in Backrooms history. The Windows entities (distinct from the level itself) were identified after three wanderers broke glass trying to reach loved ones and were pulled into the scenes. The Eternal Repository has collected extensive testimony about what wanderers see, noting that the windows always show positive memories — never trauma, never pain, only what you miss most. M.E.G. psychologists debate whether this makes the level therapeutic or torturous. The Keymaster appears here frequently, offering keys to doors at the end of long hallway stretches. Jerry has been reported walking the hallway, looking into windows with an expression that witnesses describe as 'the saddest thing I've ever seen.' When asked what he sees, he says nothing and changes the subject.",
+    atmosphere: "Level 188 is a masterpiece of emotional devastation. The hallway is warm, quiet, and beautiful. The hardwood floor creaks softly underfoot. The light is golden and gentle, like late afternoon sun through curtains. And through every window is everything you've lost. The emotional weight is immediate and overwhelming — wanderers who have survived Smilers, Hounds, and the burning wastes of Level 666 report that Level 188 brought them to their knees within minutes. The scenes in the windows are perfect. Too perfect. The people in them look exactly as you remember, say exactly what you wish you could hear them say one more time. The temptation to break the glass is almost physical, a gravitational pull toward home. The sound in the hallway is muted — a soft ambient hum, like a house at night when everyone is asleep. It is the sound of safety, of belonging, of everything the Backrooms has taken from you.",
+    survivalTips: [
+      "Do not break the windows.",
+      "The scenes are not real — do not try to enter them.",
+      "Walking forward always leads to new windows.",
+      "If you see yourself in a window, close your eyes and keep walking.",
+      "The hallway eventually connects to other levels if you persist.",
+      "Travel with a partner. Pull each other away from the windows when needed.",
+      "The benches are psychological traps. Sitting and watching weakens your resolve to leave.",
+      "Singing, talking, or making noise helps drown out the emotional pull. Stay vocal."
+    ],
+    connections: ["level-94", "level-14", "level-283"],
+    environment: "Indoor",
+    tags: ["community", "windows", "psychological", "emotional"],
+    theme: "#7a6a8a"
+  },
+  {
+    id: "level-283",
+    name: "Level 283",
+    subtitle: "Forgotten Suburbia",
+    danger: 3,
+    classification: "Unsafe",
+    description: "Level 283 is a decaying suburban neighborhood where time moves differently. Houses rot and crumble in fast-forward, plants grow and die in seconds, and the sky cycles through day and night in approximately ten minutes. The temporal distortion makes navigation extremely disorienting. Entities here are trapped in time loops, endlessly repeating the same actions. If you get caught in a time loop yourself, you may repeat the same moment forever. The suburb resembles Level 9 in layout but is distinctly different — here, entropy is visible. Paint peels off walls in real-time, glass cracks and falls from windows, roofing tiles slide and shatter. Trees sprout, grow, bear leaves, shed them, and rot to stumps in under a minute. The rapid day/night cycling creates a strobe-like effect on everything, making the visual experience disorienting and nauseating. Time pockets exist where time moves at different speeds — step into one and you might age hours while the world around you ages days, or vice versa. The entities caught in loops are the most disturbing feature: a Faceling opening and closing the same door forever, a Neighborhood Watch member writing the same citation endlessly, a Wretch reaching for food it never grasps.",
+    history: "Level 283 was discovered by a M.E.G. expedition that entered through Level 188 and emerged into what they initially believed was Level 9. The temporal anomalies were recognized within minutes when a researcher's watch began running backward. The expedition lasted what felt like four hours to the team but seventeen days had passed in the Backrooms when they returned. M.E.G. temporal researchers theorize that Level 283 is a version of Level 9 that has been subjected to extreme temporal decay — essentially a suburb that has experienced thousands of years in an accelerated timeframe. The Neighborhood Watch entities here are degraded versions of their Level 9 counterparts, trapped in loops that prevent them from functioning. The Kalag have shown interest in the time loops, believing they could harness temporal energy for their transformation rituals. Backrooms Robotics lost an entire drone expedition when the drones entered a time pocket and experienced decades of operation in seconds, burning out their motors.",
+    atmosphere: "Level 283 assaults the senses with the visual spectacle of accelerated time. The sky flickers between day and night like a broken fluorescent light. Shadows race across the ground. Weather cycles in minutes — sun, clouds, rain, sun — creating a disorienting environmental strobe. The temperature fluctuates with the rapid cycling, though the extremes are muted. The sound is perhaps the worst element: the creaking of houses decaying plays at high speed, creating a constant chorus of groaning, cracking, and splintering wood. Plants make audible sounds as they grow and die — a rushing, organic whisper. The entities in their loops produce repetitive sounds that overlay into a maddening rhythm. Your own sense of time becomes unreliable within minutes. How long have you been walking? The sky has cycled forty times. Is that six hours? Six minutes? The temporal distortion doesn't just affect the environment — it affects your perception, your memory, your confidence in your own continuity.",
+    survivalTips: [
+      "Keep a consistent pace — rushing or hesitating can trap you in a loop.",
+      "Avoid entities caught in loops — their patterns can ensnare you.",
+      "Count the day/night cycles to track your time.",
+      "Houses in the newest state of decay often contain exits.",
+      "If you notice yourself repeating an action, immediately change behavior.",
+      "Mark your left hand with a tally for each block you pass. Loops reset the environment but not your body.",
+      "Time pockets shimmer slightly at their boundaries. Watch for heat-haze-like distortions.",
+      "Carry a mechanical watch. Digital devices fail, but mechanical watches reveal time distortion through speed changes."
+    ],
+    connections: ["level-188", "level-9", "level-389"],
+    environment: "Outdoor",
+    tags: ["community", "time", "suburban", "temporal"],
+    theme: "#7a7a5a"
+  },
+  {
+    id: "level-389",
+    name: "Level 389",
+    subtitle: "The Hive",
+    danger: 5,
+    classification: "Deadzone",
+    description: "Level 389 is a massive organic structure resembling the interior of a living hive. Walls pulse with bioluminescent veins, the floor is soft and membrane-like, and the air is thick with sweet, toxic pollen. The Hive is home to swarm entities that communicate through pheromones and attack anything that doesn't smell like the colony. The deeper you venture, the more the architecture becomes biological and alive. There is no confirmed safe path through this level. The structure is organized like a true hive — hexagonal chambers connected by tunnels of varying diameter, from crawlspaces to grand passages wide enough for dozens of entities to move abreast. Amber-colored resin seals junctions and creates translucent walls through which movement can be seen on the other side. The bioluminescent veins pulsate in rhythmic waves that travel along the walls like a heartbeat, casting the interior in alternating waves of light and shadow. Deeper chambers contain pools of golden liquid, nurseries filled with organic pods, and a constant, subsonic vibration that you feel in your bones — the heartbeat of the hive itself.",
+    history: "Level 389 was discovered — and immediately regretted — by a Crimson Order scouting party that entered through Level 283. Of the twelve scouts, two returned, both exhibiting severe pollen exposure symptoms. The Kalag are the only group that voluntarily enters Level 389, using the pollen in their transformation rituals and the amber resin as a trade commodity. M.E.G. has classified the level as 'no exploration value sufficient to justify risk' and actively discourages entry. Despite this, Backrooms Robotics sent a sealed drone into the deeper chambers, which transmitted footage of what appears to be a central chamber — a vast space containing a massive organic structure that researchers described as a 'queen' or 'brain.' The drone was destroyed by swarm entities before further data could be collected. The amber resin from the entrance has been confirmed to possess unique chemical properties — it masks human scent, has mild antibiotic qualities, and glows faintly in the dark. B.N.T.G. pays premium prices for it.",
+    atmosphere: "Level 389 is an assault on every sense tuned to the biological and alien. The air is thick, sweet, and cloying — the pollen smells like honey and rotting flowers simultaneously. Breathing is labored, and within minutes the pollen begins its work: edges soften, colors intensify, the impulse to resist weakens. The floor yields under every step with a wet, organic give that makes walking feel like traversing a living body. The walls are warm and moist, and touching them reveals texture — veins, ridges, and occasional twitching responses that confirm the structure is alive. The bioluminescent light is beautiful in a primal, threatening way — amber and green pulses that illuminate the hexagonal geometry of the chambers. The sounds are the worst: buzzing from deep within the structure, clicking mandibles, the wet squelch of entities moving through tunnels, and the ever-present heartbeat vibration. Every instinct screams that you are prey inside a predator's body.",
+    survivalTips: [
+      "Avoid breathing deeply — the pollen causes hallucinations and compliance.",
+      "Cover yourself in the amber resin found at the entrance to mask your scent.",
+      "The swarm entities are blind but have excellent hearing.",
+      "Move only when the walls pulse — the vibration masks your footsteps.",
+      "No M.E.G. outpost exists here. You are on your own.",
+      "Wet cloth over your mouth and nose reduces pollen inhalation significantly.",
+      "The amber resin scent mask lasts approximately 4 hours. Reapply frequently.",
+      "Do not approach the central chamber. The entity there commands the entire swarm."
+    ],
+    connections: ["level-283", "level-666"],
+    environment: "Organic",
+    tags: ["community", "organic", "deadly", "hive"],
+    theme: "#6a5a2a"
+  },
+  {
+    id: "level-404",
+    name: "Level 404",
+    subtitle: "Not Found",
+    danger: 4,
+    classification: "Hostile",
+    description: "Level 404 is a glitching, corrupted space where reality itself seems broken. Geometry fragments and reassembles, textures load incorrectly, and the laws of physics apply inconsistently. Rooms appear and vanish. Corridors fold into themselves. The visual distortion is severe — walls display error messages, missing texture patterns, and corrupted data streams. This level appears to be a broken section of whatever system underlies the Backrooms. The corruption manifests in countless ways: floors that exist visually but have no collision (you fall through them), walls that are solid but invisible, gravity that reverses in certain zones, and lighting that illuminates from impossible angles or casts shadows in the wrong direction. Text scrolls across surfaces — stack traces, null pointer exceptions, buffer overflow warnings — in a programming language that doesn't exist. Some areas glitch so severely that they become abstract: pure color, geometric shapes, data visualizations of incomprehensible systems. The most stable areas resemble corrupted versions of other levels — a yellow-wallpapered room with stretching geometry, a pool room where the water flows upward.",
+    history: "Level 404 was discovered through Level 3's electrical infrastructure, which Backrooms Robotics theorizes connects to the Backrooms' underlying computational substrate. The discovery revolutionized Backrooms theory — the existence of error messages, missing textures, and system-level artifacts strongly supports the hypothesis that the Backrooms is a simulated or computed reality. M.E.G. established a dedicated research team, Sigma-404, to study the level. Sigma-404 has recovered fragments of what appear to be source code from terminal rooms, though the language is unknown and resists decryption. The terminal rooms are the most significant find — interactive consoles that respond to keyboard input and occasionally provide navigation data or level information. One researcher reportedly typed 'help' into a terminal and received a single response: 'HELP IS NOT IMPLEMENTED IN THIS BUILD.' Backrooms Robotics has made Level 404 their highest research priority, believing that understanding the system underlying the Backrooms could allow them to control it.",
+    atmosphere: "Level 404 is sensory chaos. Your eyes receive information that your brain cannot process — geometry that violates Euclidean rules, colors outside the normal spectrum, perspectives that shift as you move. The effect is severe nausea, disorientation, and headaches within minutes. The sound is corrupted audio: garbled voices, looping sound effects, static bursts, and occasionally clear tones that ring like system notifications. The temperature is inconsistent, shifting from warm to cold within steps. The smell alternates between ozone (like Level 3) and nothing — complete absence of scent, as if the sensation has been unloaded. The most disorienting effect is temporal: in corrupted zones, your perception of time stutters. You experience moments twice, skip forward without transition, or lose seconds that feel like minutes. Walking through Level 404 is like navigating the crash log of reality itself.",
+    survivalTips: [
+      "Do not trust your senses — what you see may not be real.",
+      "If text appears on walls, read it — it sometimes contains navigation hints.",
+      "Avoid areas where geometry is actively shifting.",
+      "The checkerboard pattern (missing texture) marks dangerous zones.",
+      "Find the terminal room — it may allow you to 'reload' a path forward.",
+      "Test floors before stepping — throw an object and watch if it lands or falls through.",
+      "Corrupted versions of other levels are usually more stable. Navigate toward recognizable architecture.",
+      "Terminal rooms have green-lit doorways. Head toward green light when lost."
+    ],
+    connections: ["level-3", "level-906", "level-3999"],
+    environment: "Glitched",
+    tags: ["community", "glitch", "digital", "corrupted"],
+    theme: "#aa3a6a"
+  },
+  {
+    id: "level-666",
+    name: "Level 666",
+    subtitle: "The Inferno",
+    danger: 5,
+    classification: "Deadzone",
+    description: "Level 666 is a hellish landscape of fire, molten rock, and perpetual agony. The temperature exceeds human tolerance, and the air itself burns the lungs. Rivers of lava flow through cracked obsidian plains under a sky of churning black smoke. The entities here are unlike any found elsewhere — they are ancient, powerful, and hostile beyond measure. Very few wanderers have entered Level 666 and returned. Those who did were forever changed. The landscape is volcanic and brutal — jagged obsidian formations rise from plains of cracked basalt, lava rivers carve channels through the rock, and geysers of superheated gas erupt without warning. The sky is a roiling canopy of black and red clouds lit from below by the lava's glow. There is no horizon — the smoke and heat haze obscure everything beyond a few hundred meters. Structures exist here: crude towers of stacked obsidian, bridges spanning lava rivers made of some heat-resistant material, and what appear to be altars — flat stone slabs arranged in circles around fire pits. The entities of Level 666 use these structures. They were here before any human arrived.",
+    history: "Level 666 is one of the oldest known levels, referenced in fragments found in Level 998 that predate any known human exploration of the Backrooms. The first confirmed human entry was by a Kalag expedition that sought the level deliberately for their transformation rituals. Of the thirty Kalag cultists who entered, seven returned — and those seven had been fundamentally altered, exhibiting heat resistance, glowing eyes, and aggressive behavior that bordered on entity-like. The Unbound revere Level 666 as the heart of the Backrooms, believing the ancient entities here are the Backrooms' original inhabitants or creators. M.E.G. sent an unmanned probe through the Bridge of Cinders, which transmitted data for approximately seven minutes before melting. The data confirmed temperatures exceeding 800°C in some areas and the presence of at least four distinct entity types not found anywhere else. The Bridge of Cinders is the only known exit — a narrow obsidian span over a lava chasm that takes approximately twelve minutes to cross at a run. Stopping on the bridge is fatal; the surface heats to lethal temperatures beneath stationary feet.",
+    atmosphere: "Level 666 is heat, pain, and primal terror. The temperature at the surface averages 70°C (158°F), lethal without protection within minutes. The air is thin, choked with sulfur dioxide, carbon monoxide, and volcanic ash. Every breath sears the lungs. The light is hellish — a deep red-orange glow from below, filtered through black smoke above, creating a world without shadows because the light comes from everywhere. The sound is overwhelming: the roar of lava flows, the crack of cooling obsidian, the hiss of gas vents, and beneath it all, something deeper — a rhythmic pounding that the Kalag call 'the Heartbeat of the Deep.' The smell is sulfur, burning rock, and something else — something organic and sweet, like burning hair. The entities here are visible as massive shapes moving through the smoke, their forms indistinct but their power undeniable. They do not hunt. They rule.",
+    survivalTips: [
+      "Do not enter this level voluntarily.",
+      "If trapped here, seek the obsidian pillars — they provide minimal heat shielding.",
+      "The entities here cannot be avoided, only survived.",
+      "Firesalt, if you have any, provides temporary heat resistance.",
+      "The only known exit requires crossing the Bridge of Cinders without stopping.",
+      "Wet cloth over your face reduces lung damage from the toxic air, but only briefly.",
+      "The obsidian altar circles are territorial boundaries. Do not enter them.",
+      "The Bridge of Cinders takes 12 minutes at a run. Do not stop. Do not look down."
+    ],
+    connections: ["level-389", "level-3999", "the-void"],
+    environment: "Hellscape",
+    tags: ["community", "fire", "deadly", "hell"],
+    theme: "#aa2a1a"
+  },
+  {
+    id: "level-808",
+    name: "Level 808",
+    subtitle: "The Horizon",
+    danger: 2,
+    classification: "Caution",
+    description: "Level 808 is an infinite flat plane under a sky that is one continuous, breathtaking sunset. The ground is smooth and reflective, like wet salt flats, perfectly mirroring the sky above. There is nothing here — no structures, no entities, no sound except your own footsteps. The isolation is complete and absolute. Walking in any direction produces no change in scenery. Many wanderers report profound existential experiences here, both transcendent and terrifying. The reflective surface creates a disorienting infinity — sky above and sky below, with you suspended between two identical expanses of orange, pink, and gold. There is no discernible line between ground and sky at the horizon. Walking feels like floating. There is a thin layer of water on the surface — perhaps a centimeter deep — that never evaporates and makes each step produce a soft splash and a ripple that expands outward forever. You are the only disturbance in an infinite mirror. At what passes for night, the sunset dims to deep purple and indigo, but true darkness never comes. There are no stars.",
+    history: "Level 808 was discovered by a wanderer from The Lost who described it as 'the place where the Backrooms runs out of ideas.' Its emptiness has made it both the most studied and least understood level. M.E.G. research teams have walked for days in every direction without finding any feature, boundary, or variation. Instruments confirm the surface extends infinitely — or at least beyond any measurable range. The Masked Maidens have been observed here exactly once, performing a dance in the middle of the empty plane with no audience. A M.E.G. researcher who witnessed it from a distance reported that the performance lasted for hours and that the Maidens seemed to be communicating with the level itself. The Lost consider Level 808 a pilgrimage destination — a place to confront the absolute emptiness of existence. Some wanderers have reported finding The End after extended walks through Level 808, suggesting that the level may reward persistence, though no consistent path has been identified.",
+    atmosphere: "Level 808 is silence, beauty, and existential vertigo. The sunset is genuinely, achingly beautiful — the kind of sky that would stop you in your tracks in the Frontrooms. Bands of color — gold, amber, rose, coral, violet — grade into each other with painterly perfection. The reflection doubles the beauty and doubles the disorientation. There is no sound except what you create: your breathing, your heartbeat, the splash of your footsteps. After the first hour, auditory hallucinations begin — music, voices, your name called from behind you. After the first day, the hallucinations intensify. After the third day, wanderers report conversations with people who aren't there. The emotional arc of Level 808 follows a pattern: wonder, then peace, then unease, then fear, then a profound existential crisis as the scale of the emptiness and your smallness within it becomes undeniable. Some wanderers emerge from Level 808 transformed — quieter, calmer, with a perspective that only absolute isolation can provide. Others emerge broken.",
+    survivalTips: [
+      "Maintain a straight line of travel using a compass or landmark system.",
+      "The silence can cause auditory hallucinations — expect them.",
+      "Bring food and water — there are no resources here.",
+      "If you see another person on the horizon, it is your own reflection.",
+      "Exits appear randomly. Be patient.",
+      "Bring a companion. Solo travel here risks severe psychological deterioration after 48 hours.",
+      "Leave a trail of items behind you to maintain a sense of progress and direction.",
+      "The auditory hallucinations are not real. Establish a reality-testing protocol before entering."
+    ],
+    connections: ["level-10", "level-188", "the-end"],
+    environment: "Outdoor",
+    tags: ["community", "empty", "existential", "beautiful"],
+    theme: "#aa6a4a"
+  },
+  {
+    id: "level-906",
+    name: "Level 906",
+    subtitle: "The Electrical Room",
+    danger: 3,
+    classification: "Unsafe",
+    description: "Level 906 is a single enormous room filled with towering server racks, blinking status lights, and the deafening roar of cooling fans. Cables snake across the floor in dense tangles. The servers seem to be processing something — their screens flash data streams too fast to read. Occasionally, the screens display coherent messages: coordinates, names of wanderers, and fragments of conversations. Some believe this level is the Backrooms' nervous system. The server racks extend from floor to ceiling — estimated at fifteen meters — and are arranged in precise rows that stretch beyond visible range. Each rack contains hundreds of servers, their status LEDs creating rivers of blinking green, amber, and red light. Cooling units the size of trucks roar between rows, pushing frigid air through the aisles. Monitor stations are scattered throughout — desks with keyboards and screens that display scrolling data. Some screens show what appear to be real-time feeds of other levels: surveillance footage of Level 0's hallways, Level 11's empty streets, Level 37's poolrooms. Others display lists of names, coordinates, and status codes that defy interpretation.",
+    history: "Level 906 was discovered through Level 404, which Backrooms Robotics researchers believe is a corrupted extension of this level's systems. The discovery of what appears to be the Backrooms' computational core sent shockwaves through every faction. M.E.G. and Backrooms Robotics established a joint research station — the only formal collaboration between the two groups. The Eternal Repository has stationed permanent archivists here to record and catalog the data displayed on screens. The most significant discovery was the 'Wanderer Index' — a terminal that, when queried with a name, returns a status ('ACTIVE,' 'INACTIVE,' 'ABSORBED,' 'CONVERTED,' 'EXITED') and a level location. The index has proven accurate in every testable case. A researcher who queried 'JERRY' received the response 'ANOMALY — NOT INDEXED.' Attempts to access administrative functions have been met with 'INSUFFICIENT PERMISSIONS.' One researcher who attempted to force access triggered a reset event that shut down all servers for 47 seconds. During those 47 seconds, the fluorescent lights in Levels 0 through 4 went dark simultaneously.",
+    atmosphere: "Level 906 is a cathedral of computation. The sound is enormous — a white-noise wall of cooling fans, spinning hard drives, and the high-pitched whine of processors under load. Conversation requires shouting. The air alternates between freezing cold (in cooling aisles) and oppressively hot (in server aisles), creating a physical zigzag as you navigate. The lighting comes entirely from the servers themselves — millions of status LEDs creating a starfield of blinking colors. The screens cast blue-white light that gives faces an ghostly appearance. The floor is a raised platform with cable channels beneath, and the cables above are so dense in places they form canopies. The psychological effect is unique to Level 906 — a sense of being inside a thinking thing, of being observed and cataloged by a system that knows you are here, knows your name, and has assigned you a status code. The servers are not just processing — they are aware. You feel this in the way the screens change when you approach, the way the fans seem to adjust to your presence, the way your name appears on a monitor you haven't queried yet.",
+    survivalTips: [
+      "The cables on the floor will trip you — move carefully.",
+      "Do not unplug anything. The consequences are unknown but theorized to be catastrophic.",
+      "Some terminals respond to keyboard input — try querying for your name.",
+      "The temperature varies wildly between aisles. Carry layers.",
+      "If the servers go silent, leave immediately — a reset is imminent.",
+      "The Wanderer Index terminal is in the central cluster. Query it for allies' locations.",
+      "Monitor feeds showing other levels are real-time. Use them to plan your route.",
+      "Server reset events affect other levels. Do not trigger them carelessly."
+    ],
+    connections: ["level-3", "level-404", "level-998"],
+    environment: "Indoor",
+    tags: ["community", "technology", "servers", "mysterious"],
+    theme: "#3a6a4a"
+  },
+  {
+    id: "level-998",
+    name: "Level 998",
+    subtitle: "The Lost City",
+    danger: 3,
+    classification: "Unsafe",
+    description: "Level 998 is an ancient, impossibly vast city built in a style no human civilization has ever used. Towers of dark stone rise into a starless sky, connected by bridges of crystal. Bioluminescent moss covers the lower structures, providing dim green light. The city is not empty — shadows move in the periphery, and distant chanting echoes through the streets. This is a place of worship for entities, a civilization that predates human entry into the Backrooms. The architecture is alien in the truest sense — proportions built for beings larger than humans, doorways shaped in non-rectangular geometries, stairs with inconsistent step heights, and windows that look inward rather than outward. Carvings cover every surface: spiraling glyphs, recursive patterns, and images of entities in postures that might be prayer, might be war, might be something humans have no word for. The crystal bridges sing when the wind passes through them, creating haunting harmonics that carry for kilometers. Plazas and amphitheaters suggest a social species that gathered in great numbers. Whatever built this city was intelligent, organized, and devoted to something that the carvings depict but human minds cannot fully comprehend.",
+    history: "Level 998 is believed to be one of the oldest levels in the Backrooms — possibly older than human involvement entirely. The Eternal Repository considers it their most important subject of study, and their Level 998 archive contains thousands of photographs, glyph rubbings, and architectural analyses. The Masked Maidens appear here more frequently than anywhere else, performing in the amphitheaters as though continuing a tradition thousands of years old. The Kalag's entity-communication rituals are based on fragments of the glyph language found in Level 998, suggesting the carvings are a form of entity communication. M.E.G. linguists have identified over 400 unique glyphs and have translated approximately 30, mostly relating to directions and warnings. One translated phrase, found carved above a sealed doorway, reads: 'THOSE WHO BUILT THIS PLACE WERE NOT THE FIRST. THEY REPLACED WHAT CAME BEFORE. WHAT COMES AFTER WILL REPLACE THEM.' The Keymaster has been seen emerging from buildings in Level 998 that no human has ever entered, carrying keys of a design found nowhere else in the Backrooms.",
+    atmosphere: "Level 998's atmosphere is one of ancient grandeur and trespasser's dread. The starless sky provides no natural light — all illumination comes from the bioluminescent moss that coats the lower third of every structure in soft green-blue. The air is cool and dry, carrying the mineral smell of old stone and something floral and alien — the moss's spores. The chanting is the defining sound: deep, rhythmic, multi-tonal vocalizations that come from within the larger buildings. The chant follows a cycle of approximately 45 minutes of sound followed by 15 minutes of silence. During the chanting, the entities within the buildings are occupied. During the silence, they move through the streets. The psychological effect is profound reverence and fear — the city radiates purpose and power, and every instinct tells you that you do not belong here, that you are walking through a place built by and for beings that would regard you as an insect regards a cathedral.",
+    survivalTips: [
+      "You are a trespasser here. Act accordingly.",
+      "The chanting follows a rhythm — move during the silent intervals.",
+      "Crystal bridges are structurally sound but will ring like bells if struck.",
+      "The moss is edible and mildly nutritious.",
+      "Do not enter any building with an open door — those are invitations you don't want to accept.",
+      "The 45-minute chanting / 15-minute silence cycle is your navigation clock. Move during chants.",
+      "Glyph carvings near doorways often contain directional information. Circles mean passage, X shapes mean sealed.",
+      "The amphitheaters are the safest open spaces. Entities rarely enter them outside of Masked Maiden performances."
+    ],
+    connections: ["level-906", "level-3999", "the-void"],
+    environment: "Outdoor",
+    tags: ["community", "ancient", "city", "alien"],
+    theme: "#3a4a5a"
+  },
+  {
+    id: "level-3999",
+    name: "Level 3999",
+    subtitle: "The True End",
+    danger: 5,
+    classification: "Deadzone",
+    description: "Level 3999 is believed to be the deepest level of the Backrooms. Reality here is tissue-thin. The environment constantly shifts between all other levels — one moment you're in the yellow halls of Level 0, the next in the burning wastes of Level 666. Each shift is violent and disorienting. At the center of Level 3999, wanderers report a door — plain, wooden, and ordinary. What lies beyond it is unknown. No one who has opened it has returned to tell. The shifts are total environmental transformations — the walls, floor, ceiling, air temperature, lighting, and ambient sounds all change simultaneously, snapping from one level's reality to another in the space of a heartbeat. You might take a step on damp carpet and land on obsidian. Breathe in humid air and exhale into freezing void. The shifts include levels no wanderer has ever documented — alien geometries, impossible colors, spaces that the human mind cannot fully render. Between shifts, for a fraction of a second, there is nothing — a flash of absolute void that suggests the shifts are the Backrooms loading one reality to replace another. The Door stands at the center, unchanged by any shift, mundane and impossible in its ordinariness.",
+    history: "Level 3999 has been reached by fewer than twenty confirmed wanderers in Backrooms history. Most arrived through Level 404 or Level 666, suggesting the deepest levels connect to each other. The first confirmed account came from a M.E.G. researcher who reached it alone after being lost for what she estimated was two years. Her journal, recovered when she was found in The End with no memory of her journey, describes the shifts as 'the Backrooms showing you everything at once, like a dying person's life flashing before their eyes — but it's not your life, it's the Backrooms' life.' The Door has been described identically by every wanderer who has seen it: plain wood, brass knob, no markings, standing freely in space with no frame or wall. It does not shift. It does not move. It waits. The Unbound believe The Door leads to the Backrooms' creator. The Followers of Jerry believe it leads to true understanding. M.E.G. officially discourages any attempt to open it. Jerry, when asked about The Door, is reported to have said only: 'Some doors are answers. Some doors are questions. That one might be both.'",
+    atmosphere: "Level 3999 is existential vertigo made physical. The constant reality shifts create a sense of never being anywhere, of existing in permanent transition. Your body never has time to adjust — each shift brings new temperature, pressure, sound, and light that your senses scramble to process before the next shift tears it away. The emotional effect of the shifts is the worst part: each level carries its own emotional weight, and Level 3999 cycles through all of them in minutes. The peace of Level 37, the dread of Level 6, the loneliness of Level 808, the terror of Level 666 — all compressed into a strobe of feelings that leaves you emotionally raw. The brief flashes of void between shifts are both the most terrifying and most peaceful moments — for a fraction of a second, there is nothing to feel at all. And always, no matter what reality surrounds you, The Door is visible. It is the only constant. The only still point in the chaos. The temptation to open it — to find something, anything, that doesn't shift — is nearly irresistible.",
+    survivalTips: [
+      "There are no reliable survival tips for this level.",
+      "The shifts between levels are not random — they respond to your emotional state.",
+      "Remaining calm slows the shifts. Panic accelerates them.",
+      "The Door is real. Whether you should open it is the question.",
+      "If you've made it here, you're either the bravest or most lost wanderer alive.",
+      "Focus on breathing. Controlled breath is the only anchor you have.",
+      "The void flashes between shifts are harmless. Do not fear them.",
+      "If you choose not to open The Door, sustained calm may eventually shift you to a stable level."
+    ],
+    connections: ["level-404", "level-666", "level-998", "the-end", "the-void"],
+    environment: "Shifting",
+    tags: ["community", "final", "shifting", "mysterious", "endgame"],
+    theme: "#2a1a3a"
+  },
+  {
+    id: "the-hub",
+    name: "The Hub",
+    subtitle: "Crossroads of the Backrooms",
+    danger: 1,
+    classification: "Safe",
+    description: "The Hub is a mysterious central nexus that connects to many levels of the Backrooms. It appears as a large, dimly lit room with numerous doors, each leading to a different level. The doors are labeled, though the labels sometimes change. The Hub is considered a safe zone — no entities have ever been observed here. M.E.G. theorizes it may be an intentional design element of the Backrooms, a waystation built by whatever created this place. The room is circular, approximately 30 meters in diameter, with a high domed ceiling that disappears into shadow. The floor is smooth, dark stone — neither warm nor cold. Doors of various styles line the circumference: wooden doors, metal doors, glass doors, doors made of crystal, doors made of material that doesn't exist in the Frontrooms. Each has a brass nameplate with the destination level. A large round table sits in the center with chairs for approximately twenty, as if someone anticipated meetings here. A chandelier of unknown design hangs above the table, providing the room's only light — a soft, warm glow that casts no shadows.",
+    history: "The Hub is one of the first non-numbered levels ever documented and remains one of the most important locations in the Backrooms. It was discovered independently by at least four different wanderers in the early days of exploration, each entering from a different level. M.E.G. theorizes that The Hub is intentionally accessible from safe levels, serving as a navigation aid. B.N.T.G. operates a permanent trading desk at the central table, and the Followers of Jerry hold regular meetings here. The Hub has served as neutral ground for inter-faction negotiations, including the ceasefire between M.E.G. and the Crimson Order. The doors are its defining mystery: new doors occasionally appear, leading to newly discovered levels, while others vanish or lock permanently. The unlabeled doors are the most concerning — three wanderers who opened unlabeled doors were never seen again. M.E.G. has sealed the remaining unlabeled doors with warning tape. The Keymaster is frequently seen here, examining doors with the fascination of a collector browsing shelves.",
+    atmosphere: "The Hub is quiet, warm, and safe in a way that feels deliberate rather than accidental. Unlike Level 37's natural serenity or Level 11's eerie emptiness, The Hub feels designed — a waiting room for the Backrooms, a place where someone (or something) decided that travelers should have a moment of peace and choice. The air is still and clean, carrying no scent. The temperature is perfect. The light from the chandelier creates a golden circle around the central table, leaving the doors in gentle shadow. There is a gravity to The Hub that is emotional rather than physical — the weight of choice. Every door leads somewhere different. Some lead to safety, some to danger, some to places unknown. Standing in The Hub, surrounded by doors, you are confronted with the architecture of possibility. The room hums with a frequency too low to hear but felt in the chest — a vibration that some researchers believe is the Backrooms' equivalent of a heartbeat.",
+    survivalTips: [
+      "Take your time here. Choose your destination carefully.",
+      "The labels on doors are mostly accurate but verify before entering.",
+      "Rest here if needed — it is genuinely safe.",
+      "Some doors only appear at certain times. Be patient.",
+      "If a door has no label, do not open it.",
+      "The B.N.T.G. trading desk can provide information about current level conditions.",
+      "New doors glow faintly at their edges. These lead to recently discovered or shifted levels.",
+      "The central table has a drawer containing a guest book. Sign it — the information helps other wanderers."
+    ],
+    connections: ["level-0", "level-4", "level-11", "level-37"],
+    environment: "Indoor",
+    tags: ["canon", "safe", "hub", "nexus"],
+    theme: "#6a6a7a"
+  },
+  {
+    id: "the-end",
+    name: "The End",
+    subtitle: "Liberation or Oblivion",
+    danger: 1,
+    classification: "Safe",
+    description: "The End is exactly what it sounds like — the exit from the Backrooms. It manifests as a peaceful meadow under a warm sun, with a single wooden door standing alone in the grass. Walking through the door returns you to the Frontrooms — normal reality. But the transition is not free. Your memories of the Backrooms fade rapidly, and some wanderers report losing years of memories from before they entered. The price of freedom is forgetting. The meadow is small — perhaps 200 meters across — surrounded by a wall of soft, white fog that gently pushes you back if you walk into it. The grass is real grass, green and soft, dotted with wildflowers. The sun is warm and real, the first real sunlight many wanderers have felt since entering the Backrooms. Butterflies drift between flowers. A stream crosses the meadow, clear and cold. The door stands in the center, identical to The Door in Level 3999 — plain wood, brass knob, no frame — but this one radiates warmth and home. The emotional effect is overwhelming. Many wanderers collapse and weep upon arriving.",
+    history: "The End has been reached by approximately 150 documented wanderers, though M.E.G. estimates the true number is higher — those who pass through often lose their memories of the Backrooms and never report back. The first documented exit was a wanderer who appeared in a field in rural England with no memory of the previous three years. M.E.G. researchers in the Frontrooms identified her as a missing person and pieced together her story through journal fragments she'd written on her arms in permanent marker before passing through. The memory cost varies: some lose only their Backrooms memories, while others lose years of pre-Backrooms life. One wanderer exited having forgotten his own name. The Followers of Jerry believe The End is Jerry's gift to the worthy. The Unbound consider it the ultimate trap — not freedom, but the erasure of truth. Some wanderers who reach The End choose to stay in the meadow rather than pass through, either because they fear the memory loss or because they have nothing left to return to.",
+    atmosphere: "The End is peace. Pure, complete, devastating peace. After the horrors and wonders of the Backrooms, The End is so normal it hurts. The sun is warm. The grass smells like summer. The stream sounds like childhood. Birds sing — real birds, not loops or simulations. The emotional impact is a dam breaking: every suppressed fear, every moment of terror, every loss and close call and sleepless night in the Backrooms surfaces all at once in the presence of genuine safety. Wanderers who arrive here often spend hours — sometimes days — simply lying in the grass, feeling sunlight, crying, laughing, processing the weight of survival. The door stands patient and unpretentious, waiting for your choice. The fog wall is gentle, like being wrapped in cotton, and the message is clear: you have two choices. Go through the door and return to reality, paying the price of memory. Or turn back into the fog and return to the Backrooms, keeping everything but gaining nothing. There is no wrong choice. There is only your choice.",
+    survivalTips: [
+      "If you've reached The End, the journey is over.",
+      "Walking through the door will return you to normal reality.",
+      "You will forget most of your time in the Backrooms.",
+      "Some wanderers choose not to leave. That is their right.",
+      "Write down everything you want to remember before you step through.",
+      "The meadow is safe for extended stays. Rest here as long as you need.",
+      "Physical notes survive the transition. Write everything important on paper or skin.",
+      "The stream water is real and drinkable. Possibly the first real water you've had in months."
+    ],
+    connections: ["level-3999", "level-808"],
+    environment: "Outdoor",
+    tags: ["canon", "exit", "peaceful", "endgame"],
+    theme: "#8aaa6a"
+  },
+  {
+    id: "the-void",
+    name: "The Void",
+    subtitle: "The Space Between",
+    danger: 5,
+    classification: "Deadzone",
+    description: "The Void is not a level in the traditional sense — it is the absence of level. It exists in the spaces between levels, in the gaps of reality. There is nothing here: no floor, no ceiling, no walls, no light, no sound, no temperature. You float in absolute nothingness. Time does not pass. Entities do not exist here because nothing can exist here. Wanderers who fall into The Void are suspended in eternal, conscious nothingness. The Void is not darkness — darkness implies the absence of light, which implies light could exist. The Void is the absence of the concept of light, of space, of direction, of time. You cannot see because there is nothing to see, including darkness. You cannot hear because sound requires medium and there is no medium. You cannot feel temperature because temperature requires matter and there is no matter. Your body exists — you can feel your own heartbeat, your own breathing — but nothing else does. There is no up, no down, no forward, no backward. You are a point of consciousness floating in a space that is not a space.",
+    history: "The Void has been experienced by an unknown number of wanderers, but only eleven have returned to describe it. Each account is remarkably consistent despite the experiencers having no contact with each other. The first documented Void survivor was recovered from Level 0, appearing suddenly in a hallway after being missing for an indeterminate period. She reported that she had been in The Void for 'either five minutes or five thousand years — time doesn't exist there, so the question doesn't mean anything.' M.E.G. researchers theorize that The Void is the null space of the Backrooms — the unallocated memory between rendered levels. Level 404's error messages occasionally reference 'VOID_SPACE_OVERFLOW' errors, supporting this theory. The Void cannot be entered intentionally — wanderers fall into it through glitches, level boundaries, or entity attacks that displace them from reality. The eleven survivors all report the same escape mechanism: intense, focused visualization of a specific level, sustained for what felt like an eternity, until reality 'caught' them and pulled them back. Three of the eleven survivors were permanently changed — they can sense level boundaries and transition points, as though their time in The Void calibrated them to the Backrooms' structure.",
+    atmosphere: "Describing The Void's 'atmosphere' is a contradiction — there is no atmosphere. There is nothing. But the psychological experience of nothing is the most extreme sensation a human can endure. Within seconds of entering The Void, the brain begins to panic — it receives no sensory input whatsoever except internal signals (heartbeat, breathing, proprioception). The absence of all external stimuli triggers a cascade of neurological responses: hallucinations (the brain generating input to fill the void), dissociation (the mind questioning its own existence), and eventually a state that survivors describe as 'dissolving' — the sense that without external reference points, the self begins to lose coherence. You forget what direction means. You forget what color means. You forget your own name. The only anchor is physical sensation — the feeling of your own body, your heartbeat, the rise and fall of your lungs. Survivors who maintained consciousness universally report that they survived by counting heartbeats, by feeling their own pulse, by using their body as proof that they still existed.",
+    survivalTips: [
+      "You cannot survive The Void. There is nothing to survive.",
+      "If you are falling into nothingness, you are in The Void.",
+      "The only escape is if reality 'catches' you — an involuntary clip into another level.",
+      "Maintain consciousness. If you let your mind go, you will be here forever.",
+      "Some report that focusing intensely on a specific level can pull you toward it.",
+      "Count your heartbeats. Your body is your only proof of existence here.",
+      "Visualize a specific, familiar level in complete detail. This may trigger a re-entry.",
+      "Do not try to move. Movement requires space, and there is no space here. Focus inward."
+    ],
+    connections: ["level-3999", "level-666", "level-998"],
+    environment: "Void",
+    tags: ["canon", "void", "deadly", "nothingness", "existential"],
+    theme: "#0a0a1a"
+  },
+  {
+    id: "the-promised-land",
+    name: "The Promised Land",
+    subtitle: "Utopia of the Lost",
+    danger: 1,
+    classification: "Safe",
+    description: "The Promised Land is a rumored level that only the most desperate wanderers ever find. It is said to be a perfect sanctuary — a small town where all needs are met, where entities cannot enter, and where time passes normally. Those who find it never leave by choice. M.E.G. has never confirmed its existence, but enough consistent reports exist that it remains on their records. The path there is different for every wanderer. Reports describe a small, idyllic town of perhaps fifty buildings: houses with gardens, a general store that stocks everything, a library, a clinic, a bakery that smells of fresh bread. The architecture matches no specific era or culture, as though assembled from the best parts of every hometown. Residents — other wanderers who arrived before you — greet you by name, though you've never met them. The sky has weather. Real weather: clouds, rain, sunshine, seasons. There is a clock tower in the town square that keeps accurate time. Children play in the streets — real children, not entities, born in the Promised Land to wanderers who settled here. It is, by all accounts, everything the Backrooms is not.",
+    history: "The Promised Land is the Backrooms' most enduring myth and most contentious topic. M.E.G. officially classifies it as 'unconfirmed — probable' based on forty-seven independent, consistent descriptions from wanderers who claim to have been there or met someone who has. No M.E.G. researcher has ever reached it. The Followers of Jerry believe Jerry knows its location but refuses to share it, adhering to the principle that the path must find the wanderer, not the reverse. The Backrooms Colonists consider it their aspirational model — proof that true safety is possible. The Unbound dismiss it as propaganda designed to maintain false hope. The most compelling evidence is from a wanderer who arrived at M.E.G. Base Alpha carrying a handwritten letter from a Promised Land resident to their sibling, who was a known M.E.G. researcher. The letter contained personal details that only the real sibling could know. The researcher wept and immediately departed to find the Promised Land. She has not been seen since — which believers interpret as success and skeptics as tragedy.",
+    atmosphere: "Descriptions of The Promised Land's atmosphere are achingly normal. The air smells of grass, woodsmoke, baking bread, and rain. Birds sing in trees that change with the seasons. The temperature follows natural patterns. People say 'good morning' and mean it. There is a pub that serves warm drinks and has a fireplace. There is a school where children learn things that matter: kindness, curiosity, how to grow tomatoes. The emotional effect on arriving wanderers is consistently described as 'coming home' — not to any specific home, but to the concept of home, to safety, to belonging. The wrongness that pervades every other level is completely absent. There is no hidden threat, no subtle manipulation, no price to be paid. This is what makes it the most debated level in the Backrooms: after everything else, can there really be a place with no catch? The optimists say yes. The cynics say the catch is that you can never share it. The philosophers say that perhaps a place you can never leave is just another kind of trap.",
+    survivalTips: [
+      "No one can tell you how to get here — the path finds you.",
+      "If you arrive, you will know. There will be no doubt.",
+      "The town has everything you need.",
+      "Those who try to lead others here always fail.",
+      "Perhaps the real promised land is accepting where you are.",
+      "Reports suggest the path opens during moments of genuine acceptance, not desperation.",
+      "Writing letters to those outside is possible. Delivering them is another matter.",
+      "If you leave voluntarily, you can never find it again."
+    ],
+    connections: ["the-end", "the-hub"],
+    environment: "Outdoor",
+    tags: ["community", "mythical", "safe", "utopia"],
+    theme: "#aaba8a"
+  },
+  {
+    id: "level-fun",
+    name: "Level Fun",
+    subtitle: "=)",
+    danger: 5,
+    classification: "Deadzone",
+    description: "Level Fun is a children's birthday party that never ends. Bright streamers hang from the ceiling, colorful balloons float everywhere, and a massive cake sits on the main table. The decorations are cheerful, the music is upbeat, and the Partygoers are SO happy to see you. They just want you to join the party. Everyone here is having SO much fun. You should stay. You should join them. =) Don't you want to be happy? Don't you want to have fun? =) =) =) The party room is enormous — a warehouse-sized space decorated with crepe paper, banners reading 'HAPPY BIRTHDAY' (no name is ever specified), and tables laden with food that looks delicious but is dangerously toxic. Pin-the-tail-on-the-donkey games hang on walls, piñatas dangle from the ceiling, and party favor bags are stacked by the door, each containing items that will convert anyone who touches the contents. The music is children's party music played slightly too fast, and the Partygoers dance and laugh and wave with frozen grins and glassy eyes, every single one of them wearing a colorful party hat over skin that is just slightly too yellow, just slightly too waxy, just slightly too wrong. =)",
+    history: "Level Fun is one of the most feared levels in the Backrooms and the primary territory of the Partygoer entities. M.E.G. has classified it as a 'conversion zone' — a level whose primary purpose is the transformation of humans into entities. The level was discovered when a group of wanderers in Level 0 heard cheerful music through a wall and broke through, believing they had found other survivors celebrating. All five were converted within hours. The sole account of Level Fun's interior comes from a M.E.G. researcher who entered wearing a full hazmat suit and maintained a tethered lifeline back to Level 0. She spent eleven minutes inside before the Partygoers became aggressive and began physically restraining her. She escaped with severe chemical burns where a balloon popped against her suit and the conversion agent ate through the material. Her report describes the Partygoers as 'the saddest thing I've ever seen — they're not evil, they're converted, they're victims who now create more victims, and they don't even know what they've lost.' The Followers of Jerry report that Jerry refuses to enter Level Fun, the only level he actively avoids. =)",
+    atmosphere: "Level Fun is aggressive happiness. The colors are oversaturated — pinks, yellows, blues, and greens turned up to painful intensity. The music is loud, cheerful, and relentless — birthday songs, celebratory jingles, and children's music played on a loop. Confetti falls from the ceiling in a continuous stream. The Partygoers shout greetings and invitations over each other in voices that are enthusiastic to the point of mania. The smell is sugar, frosting, and something chemical underneath — the conversion agent, sweet and cloying. Everything about Level Fun is designed to overwhelm the senses with positivity, to create a moment of lowered guard where you accept a piece of cake, catch a balloon, open a party favor. The true horror is not the cheerfulness — it's the realization that every single Partygoer was once a person. They had names, memories, lives. Now they are party decorations that convert more party decorations, in a celebration that never ends and has nothing to celebrate. =) =) =)",
+    survivalTips: [
+      "DO NOT EAT THE CAKE.",
+      "The Partygoers are not human. Do not trust their smiles.",
+      "If you hear 'Happy Birthday' being sung, run.",
+      "The balloons pop into a substance that transforms you into a Partygoer.",
+      "There is no fun here. There is only conversion. Leave immediately.",
+      "Full-body coverage reduces conversion risk. Do not let the conversion agent contact skin.",
+      "Almond Water splashed on a Partygoer causes them momentary distress and hesitation. Use it to create escape windows.",
+      "The exit is always the way you came in. Do not go deeper looking for another way out."
+    ],
+    connections: ["level-0", "level-5", "level-13"],
+    environment: "Indoor",
+    tags: ["canon", "partygoers", "deadly", "iconic", "trap"],
+    theme: "#dd55aa"
+  }
+],
+
+// ── ENTITIES ────────────────────────────────────────────────
+entities: [
+  {
+    id: "smiler",
+    name: "Smiler",
+    danger: 4,
+    classification: "Hostile",
+    description: "Smilers are among the most iconic and feared entities in the Backrooms. They manifest as a pair of luminous, grinning eyes and teeth floating in absolute darkness. Their true form, if they have one, has never been observed. Smilers are ambush predators — they wait in dark areas for wanderers to stumble into their range. Their 'smile' is the only warning, a Cheshire grin that glows faintly in the shadows.",
+    behavior: "Smilers are patient hunters. They remain motionless in darkness until prey comes close enough. They are repelled by direct, sustained light and cannot attack a wanderer who maintains eye contact while retreating. Breaking eye contact or losing your light source is typically fatal. They are most common in Levels 2, 3, and 6.",
+    survivalTips: [
+      "Always carry a reliable light source.",
+      "If you see the grin, maintain eye contact and back away slowly.",
+      "Never turn your back on a Smiler.",
+      "They cannot exist in well-lit areas.",
+      "Multiple Smilers may work together to herd prey into darkness."
+    ],
+    origin: "The origin of Smilers is hotly debated. M.E.G. researchers have proposed three theories: (1) they are native Backrooms entities that evolved to exploit the darkness prevalent in many levels, (2) they are manifestations of the human fear of the dark, given form by whatever system underlies the Backrooms, or (3) they are the remnants of wanderers who died in darkness, their final expressions — the desperate smile of someone trying to convince themselves they're okay — preserved as predatory echoes. The third theory gained traction after a M.E.G. linguist reported hearing faint, distorted human speech behind a Smiler's grin during a close encounter. Backrooms Robotics' thermal imaging shows that Smilers have no body heat, no mass, and no physical form — they are light patterns in darkness, grins that exist without faces.",
+    foundIn: ["level-2", "level-3", "level-6", "level-8"],
+    tags: ["canon", "predator", "iconic", "darkness"]
+  },
+  {
+    id: "skin-stealer",
+    name: "Skin-Stealer",
+    danger: 4,
+    classification: "Hostile",
+    description: "Skin-Stealers are horrifying humanoid entities that wear the skin of their victims. At a distance, they appear as normal humans, but closer inspection reveals wrongness — the skin doesn't fit quite right, movements are slightly off, and their eyes have a dull, lifeless quality. They are intelligent predators that use mimicry to lure victims into false security before attacking.",
+    behavior: "Skin-Stealers approach wanderers while disguised, attempting to appear as fellow survivors. They will mimic speech patterns and mannerisms they've learned from previous victims. They attack when the wanderer lets their guard down or turns their back. They are most dangerous in levels with existing human populations where their disguise is more effective.",
+    survivalTips: [
+      "Ask strangers questions only a real wanderer would know the answer to.",
+      "Watch for uncanny valley signs — stiff movements, wrong proportions.",
+      "Never travel alone in levels known for Skin-Stealers.",
+      "They struggle to replicate genuine emotional responses.",
+      "If in doubt, maintain distance and observe before approaching anyone."
+    ],
+    origin: "Skin-Stealers are believed to be a predatory species that evolved within the Backrooms, developing mimicry as a hunting strategy in levels where humans congregate. Their intelligence is disturbingly high — they learn languages, adapt to cultural norms, and improve their disguises over time. The most unsettling theory, proposed by a Kalag defector, is that Skin-Stealers are humans who underwent a partial entity transformation — retaining their intelligence but losing their identity, forced to steal the appearances and mannerisms of others because they no longer have their own. This would explain their almost-perfect mimicry and the dull sadness sometimes visible in their stolen eyes. M.E.G. refuses to classify them as former humans due to the moral implications for their containment protocols.",
+    foundIn: ["level-9", "level-5", "level-13", "level-11"],
+    tags: ["canon", "mimic", "intelligent", "humanoid"]
+  },
+  {
+    id: "hound",
+    name: "Hound",
+    danger: 3,
+    classification: "Hostile",
+    description: "Hounds are quadrupedal entities that resemble emaciated, hairless dogs with disproportionately long limbs and eyeless heads. Despite lacking visible eyes, they have exceptional hearing and can detect footsteps from considerable distances. They hunt in packs of 3-7 and are remarkably fast. Their skin is pale and translucent, revealing dark musculature beneath.",
+    behavior: "Hounds patrol territories in packs, communicating through subsonic growls humans can feel but not hear. They are attracted to noise and vibration. When hunting, they attempt to surround their prey and cut off escape routes. They are less aggressive when well-fed and can sometimes be avoided by remaining absolutely silent.",
+    survivalTips: [
+      "Move silently. Remove anything that jangles or clinks.",
+      "If you hear deep vibrations in your chest, Hounds are nearby.",
+      "They are fast but have poor turning radius — use tight corners.",
+      "Never try to outrun a pack in open space.",
+      "Firesalt can deter them temporarily."
+    ],
+    origin: "Hounds are theorized to be one of the Backrooms' oldest predatory species, possibly native to the cave systems of Level 8 before spreading to other levels through tunnel networks. Their pack behavior and territorial nature suggest a long evolutionary history within the Backrooms. Backrooms Robotics' DNA analysis (using a tooth recovered from an encounter) revealed genetic material that doesn't match any known terrestrial species but shares structural similarities with canine DNA — as though something took the concept of a hunting dog and rebuilt it from scratch using alien biology. The Kalag claim Hounds were once guardians created by the entities of Level 998 to patrol their territory, and that their spread to other levels represents a breakdown in whatever system once contained them.",
+    foundIn: ["level-1", "level-2", "level-3", "level-8"],
+    tags: ["canon", "pack", "predator", "sound"]
+  },
+  {
+    id: "partygoer",
+    name: "Partygoer",
+    danger: 5,
+    classification: "Hostile",
+    description: "Partygoers are former humans who have been 'converted' into permanent party-goers. They appear as people wearing colorful party hats and wide, frozen smiles. Their skin has a slightly waxy, yellowish hue, and their eyes are glassy and unfocused. They speak in an enthusiastic, childlike manner, constantly inviting others to 'join the party.' Contact with their bodily fluids or consumption of their food triggers an irreversible transformation into another Partygoer.",
+    behavior: "Partygoers are relentlessly cheerful and persistent. They approach wanderers with offers of cake, balloons, and party favors — all of which are vectors for conversion. They are not overtly violent but will physically restrain wanderers to force-feed them cake if gentle persuasion fails. They congregate primarily in Level Fun but can appear in any level. =)",
+    survivalTips: [
+      "Do not accept any food, drink, or items from Partygoers.",
+      "Their bodily fluids (saliva, blood) can convert you on contact.",
+      "Outrun them — they move at a casual walking pace.",
+      "Level Fun is their home base. Avoid it at all costs.",
+      "If a balloon pops near you, hold your breath and run."
+    ],
+    origin: "Partygoers are confirmed to be converted humans — this is one of the few entity origins that is not theoretical. The conversion process is chemical: a substance present in the food, balloons, and bodily fluids of existing Partygoers rewrites the victim's biology and psychology over a period of approximately four hours. During conversion, the victim's skin takes on a yellowish, waxy tone, their smile becomes fixed, and their personality is overwritten with the relentless cheerfulness that defines the species. The first Partygoer is unknown — the 'Patient Zero' problem. M.E.G. theorizes that Level Fun itself generates the conversion agent and that the first Partygoers were wanderers who consumed the cake or touched the balloons before the danger was understood. What makes Partygoers uniquely tragic is that early-stage conversion can be reversed with Almond Water, suggesting that the original person is still in there, buried under layers of forced joy.",
+    foundIn: ["level-fun", "level-0", "level-5", "level-13"],
+    tags: ["canon", "converter", "iconic", "psychological"]
+  },
+  {
+    id: "wretch",
+    name: "Wretch",
+    danger: 2,
+    classification: "Cautious",
+    description: "Wretches are malnourished, skeletal humanoids with elongated limbs and sunken features. They were once human wanderers who lost their sanity and sense of self after prolonged time in the Backrooms. They huddle in dark corners, whimpering and scratching at walls. Most are harmless, too broken to pose a threat, but cornered or startled Wretches can become violent with surprising strength.",
+    behavior: "Wretches are reclusive and fearful. They avoid light and other beings. They scavenge for food and Almond Water, sometimes stealing from wanderer camps. When startled, they screech and flail violently before fleeing. Rarely, a Wretch may approach a wanderer and attempt to communicate through broken speech — remnants of their former humanity trying to surface.",
+    survivalTips: [
+      "Do not corner or startle a Wretch.",
+      "Offering Almond Water may calm an agitated Wretch.",
+      "They are a reminder of what happens if you lose hope. Stay sane.",
+      "Some M.E.G. researchers study Wretches for clues about the Backrooms' effects on humans.",
+      "A speaking Wretch may provide useful information. Listen carefully."
+    ],
+    origin: "Wretches are confirmed former humans — wanderers who succumbed to the psychological toll of the Backrooms. Prolonged exposure to the Backrooms' environment, combined with isolation, fear, and lack of Almond Water, degrades human cognition in a process M.E.G. calls 'sanity decay.' Wretches represent the final stage of this decay: the loss of language, identity, and higher reasoning, leaving only survival instincts and fragments of memory. The transformation is gradual and, past a certain point, irreversible. Almond Water can slow or halt early-stage decay, but once a wanderer has become a full Wretch, no treatment has proven effective. The rare speaking Wretches — those who retain fragments of language — are the most studied, as they offer a window into the intermediate stages. One speaking Wretch, encountered in Level 4, repeatedly said the phrase 'I was someone' before fleeing. The Eternal Repository maintains a registry of known Wretches matched to missing wanderers, though positive identification is rarely possible.",
+    foundIn: ["level-0", "level-1", "level-2", "level-4"],
+    tags: ["canon", "former-human", "tragic", "scavenger"]
+  },
+  {
+    id: "faceling",
+    name: "Faceling",
+    danger: 2,
+    classification: "Cautious",
+    description: "Facelings are humanoid entities with completely smooth, featureless faces — no eyes, nose, mouth, or distinguishing features. They wear mundane clothing (business suits, casual wear, uniforms) and go about routines that mimic normal human behavior: sitting at desks, walking through hallways, standing in elevators. They are mostly harmless if left alone, but they react with sudden violence if spoken to or touched.",
+    behavior: "Facelings perform pantomimes of daily life, apparently unaware of wanderers unless interacted with. They seem to follow scripts from a life they never lived — commuting, working, shopping. Aggressive Facelings are rare but dangerous, identified by wearing entirely red clothing. Most Facelings ignore wanderers completely, continuing their routines as if no one else exists.",
+    survivalTips: [
+      "Do not speak to or touch Facelings.",
+      "Observe from a distance — they provide no threat if ignored.",
+      "Facelings in red clothing are aggressive. Avoid them.",
+      "They sometimes 'hold doors open,' but do not enter — it's a territorial gesture.",
+      "M.E.G. classifies them as a sign of a relatively stable level."
+    ],
+    origin: "Facelings are among the most mysterious entities in the Backrooms because they appear to be simulations of human beings rather than predators or transformed wanderers. Their featureless faces and scripted behaviors suggest they are placeholders — characters generated by the Backrooms to populate levels that are designed to mimic human environments. This theory is supported by their concentration in levels that resemble real-world spaces (offices, suburbs, cities). They are the equivalent of NPCs in a video game, going through the motions of a life they never lived. An alternative theory from the Kalag suggests that Facelings are the original inhabitants of the Backrooms, stripped of their individuality when humans began arriving and 'overwriting' the system with human reality. The aggressive red-clothed Facelings are theorized to be 'corrupted' instances — Facelings whose scripts have broken down, causing erratic and violent behavior.",
+    foundIn: ["level-4", "level-11", "level-9", "level-1"],
+    tags: ["canon", "humanoid", "mimicry", "passive"]
+  },
+  {
+    id: "duller",
+    name: "Duller",
+    danger: 3,
+    classification: "Hostile",
+    description: "Dullers are tall, gaunt humanoid entities whose presence drains the color and vibrancy from their surroundings. Areas near a Duller become desaturated and grey. They move slowly but inexorably toward their prey. Prolonged exposure to a Duller's field causes emotional numbness, loss of motivation, and eventually catatonia. They don't kill directly — they drain the will to live until their victim simply stops moving.",
+    behavior: "Dullers drift through levels like ghosts, leaving a trail of colorless, emotionally dead space in their wake. They are drawn to strong emotions — joy, fear, anger — and will gravitate toward emotionally active wanderers. Their draining field has a radius of approximately 15 meters. Within this field, emotions fade, colors dim, and the desire to move or survive ebbs away.",
+    survivalTips: [
+      "If colors around you start fading, a Duller is near.",
+      "Move away from the desaturated zone immediately.",
+      "They move slowly — you can always outpace them.",
+      "Strong emotional stimuli (Almond Water, memories of loved ones) can temporarily resist their effect.",
+      "Never stop moving in a grey zone. The urge to stop is the Duller's weapon."
+    ],
+    origin: "Dullers are theorized to be manifestations of the psychological decay that the Backrooms inflicts on wanderers — depression, despair, and emotional numbness given physical form. Their ability to drain color and emotion from their surroundings is unique among entities and suggests they are not biological predators but something more abstract — emotional parasites that feed on the vibrancy of living minds. M.E.G. psychologists note that prolonged exposure to a Duller's field mirrors the symptoms of severe clinical depression: anhedonia, loss of motivation, emotional flatness, and eventually catatonia. Some researchers believe Dullers are what happens when a Wretch's sanity decay continues beyond the physical breakdown — the despair separates from the body and becomes its own entity, drifting through levels and spreading the numbness that created it.",
+    foundIn: ["level-1", "level-4", "level-13", "level-283"],
+    tags: ["canon", "psychological", "drainer", "slow"]
+  },
+  {
+    id: "death-moth",
+    name: "Death Moth",
+    danger: 2,
+    classification: "Cautious",
+    description: "Death Moths are large moth-like entities with wingspans of approximately one meter. Their wings are dark with patterns that resemble human skulls. Despite their menacing appearance, Death Moths are not inherently aggressive. They are drawn to light sources and will flutter around flashlights and fluorescent fixtures. Male Death Moths are smaller and more skittish. Female Death Moths are larger and can become territorial during nesting.",
+    behavior: "Death Moths are primarily attracted to light. They will follow wanderers carrying light sources, sometimes landing on them. While this is harmless, it can be terrifying in the dark. Their wing scales release a fine powder that causes mild skin irritation and sneezing. Aggressive behavior is rare and limited to females protecting nests. Some wanderers have successfully used Death Moths as early warning systems — they flee from dangerous entities.",
+    survivalTips: [
+      "Death Moths are more afraid of you than you are of them.",
+      "Their presence near your light source is annoying but harmless.",
+      "If Death Moths suddenly flee your area, something dangerous is approaching.",
+      "Do not disturb nests — female Death Moths are protective.",
+      "The wing powder is irritating but not toxic."
+    ],
+    origin: "Death Moths are one of the few entities that appear to be genuinely natural creatures rather than transformed humans or Backrooms manifestations. They exhibit normal biological behaviors: feeding (on the bioluminescent fungi of Level 8), mating, nesting, and territorial defense. Backrooms Robotics' biological analysis suggests they evolved within the Backrooms' ecosystem, filling the ecological niche of a large nocturnal insect. Their skull-like wing patterns are likely an evolved defense mechanism — camouflage or warning coloration developed in response to predators. Their value as early warning systems has made them unexpectedly beloved by experienced wanderers, who consider a Death Moth landing on their flashlight a good omen rather than a threat. The Followers of Jerry report that Jerry speaks kindly of Death Moths and has been seen gently guiding them away from danger.",
+    foundIn: ["level-2", "level-6", "level-8", "level-3"],
+    tags: ["canon", "insectoid", "passive", "indicator"]
+  },
+  {
+    id: "clump",
+    name: "Clump",
+    danger: 3,
+    classification: "Hostile",
+    description: "Clumps are amalgamations of organic matter fused into roughly spherical masses. They appear to be composed of multiple entities — or multiple humans — merged together into a single, rolling, pulsating mass. Faces and limbs protrude from the surface at random angles, some still moving. They range in size from a basketball to a small car. The sounds they produce — moaning, whispering, crying — suggest some degree of consciousness from the component beings.",
+    behavior: "Clumps roll and tumble through corridors, absorbing anything organic they contact. They are attracted to sound and heat. Smaller Clumps are slow and avoidable, but larger ones can fill entire hallways. They leave a sticky organic residue that can temporarily trap wanderers who step in it. Being absorbed by a Clump is a fate considered worse than death — you remain conscious within the mass.",
+    survivalTips: [
+      "Listen for the sounds of multiple voices speaking simultaneously.",
+      "Avoid organic residue on floors — it's a Clump trail.",
+      "They cannot climb or navigate stairs well. Use elevation.",
+      "Fire is effective at driving them back temporarily.",
+      "If you see faces in the mass, do not attempt communication."
+    ],
+    origin: "Clumps are among the most disturbing entities because their origin is partially visible — the faces and limbs protruding from the mass are identifiable as human (and occasionally entity). They form when organic matter comes into contact with a 'seed' — a small, spherical core of unknown biological material that begins absorbing and integrating anything organic it touches. The seed grows by adding mass, and as it absorbs beings, fragments of their consciousness persist within the amalgamation. M.E.G. has recorded audio from Clumps that includes recognizable human speech — names, pleas for help, and fragments of conversation. The seeds' origin is unknown, though they appear to generate spontaneously in high-humidity, high-organic-matter environments. The Kalag have attempted to study Clump seeds, believing they hold the key to their transformation rituals. Two Kalag researchers were absorbed during the attempt.",
+    foundIn: ["level-2", "level-5", "level-8", "level-389"],
+    tags: ["canon", "amalgamation", "absorber", "body-horror"]
+  },
+  {
+    id: "jerry",
+    name: "Jerry",
+    danger: 1,
+    classification: "Friendly",
+    description: "Jerry is a singular, named entity in the Backrooms who appears as an ordinary middle-aged man in casual clothing. He is friendly, helpful, and seemingly well-adjusted despite living in the Backrooms. Jerry knows an extraordinary amount about the Backrooms' layout, entities, and mechanics. He offers guidance to lost wanderers and has saved countless lives. His origin is unknown, and he deflects questions about his past with a warm smile.",
+    behavior: "Jerry wanders the Backrooms freely, seemingly immune to entities and level hazards. He appears to wanderers who are in genuine distress, offering practical advice, Almond Water, and directions to safer levels. He is always calm, always kind, and always knows more than he shares. He has a dedicated following (The Followers of Jerry) who consider him a messianic figure. Jerry himself seems embarrassed by the attention.",
+    survivalTips: [
+      "If Jerry offers you advice, take it. He has never been wrong.",
+      "He cannot be sought — he finds you when you need him.",
+      "Do not ask him how he survives alone. He won't answer and it makes him sad.",
+      "Jerry's knowledge of level connections is unmatched.",
+      "Some M.E.G. researchers theorize Jerry is not human. He denies this with a laugh."
+    ],
+    origin: "Jerry's origin is the single greatest mystery in the Backrooms. He appears human in every measurable way — he eats, drinks, sleeps, and ages (though slowly). Yet he is immune to entities, navigates freely between levels, and possesses knowledge that no single wanderer could accumulate in a lifetime. Theories abound: he is a Frontrooms human who entered the Backrooms so long ago that he has become part of its fabric. He is the Backrooms' creator, walking within his creation. He is an entity so perfectly mimicking humanity that he has become human. He is a glitch — a system administrator accidentally manifested as a person. Jerry himself deflects all questions about his nature with humor and warmth. When pressed, he becomes visibly sad and says only: 'I'm just Jerry.' The Wanderer Index in Level 906 returns 'ANOMALY — NOT INDEXED' for his name, suggesting that whatever system tracks the Backrooms does not know what to do with him either.",
+    foundIn: ["level-0", "level-1", "level-4", "level-11"],
+    tags: ["canon", "friendly", "unique", "guide", "iconic"]
+  },
+  {
+    id: "the-keymaster",
+    name: "The Keymaster",
+    danger: 2,
+    classification: "Neutral",
+    description: "The Keymaster is a tall, thin entity wearing a long dark coat covered in keys of every shape and size. Its face is obscured by a wide-brimmed hat, and its fingers are unnaturally long. It appears in levels with many doors, offering wanderers keys in exchange for memories. Each key opens a specific door to a specific level. The Keymaster always keeps its word — the key will work — but the memory it takes is always an important one.",
+    behavior: "The Keymaster approaches wanderers near locked or blocked passages. It speaks in a whispered, raspy voice, offering a deal: a key for a memory. The wanderer does not get to choose which memory is taken. The Keymaster seems to collect memories with the same enthusiasm a numismatist collects coins — each one is precious to it. It never forces a deal and accepts 'no' gracefully.",
+    survivalTips: [
+      "A deal with The Keymaster is always honored — the key will work.",
+      "You cannot choose which memory is taken. Are you willing to gamble?",
+      "Memories taken are gone permanently — no recovery is possible.",
+      "The more valuable the destination, the more valuable the memory taken.",
+      "Some wanderers have made deals they regretted. Think carefully."
+    ],
+    origin: "The Keymaster is believed to be one of the Backrooms' oldest entities — references to a 'key-bearing figure' appear in the glyphs of Level 998, predating any known human entry. It is not a transformed human; its physiology (unnaturally long fingers, obscured face, the coat that seems to be part of its body rather than clothing) marks it as something that was never human. The keys it carries are not merely collected — they appear to grow from its coat, each one formed when a new door is created in the Backrooms. The Keymaster's obsession with memories suggests a connection to Level 188 and the Memory Jars, and some researchers believe it is the creator of both — a being that experiences existence through collected memories because it has none of its own. The Eternal Repository has recorded every known deal made with the Keymaster and found a pattern: it preferentially takes memories of connection — moments shared with loved ones, feelings of belonging, the warmth of home.",
+    foundIn: ["level-5", "level-0", "the-hub", "level-998"],
+    tags: ["canon", "trader", "neutral", "unique"]
+  },
+  {
+    id: "crawler",
+    name: "Crawler",
+    danger: 4,
+    classification: "Hostile",
+    description: "Crawlers are fast, quadrupedal entities with pale, stretched skin and limbs that bend at unnatural angles. They move with terrifying speed along walls and ceilings as easily as floors. Their heads rotate 360 degrees, and their mouths are filled with needle-like teeth. They are ambush predators that drop from ceilings onto unsuspecting prey. Their clicking sounds echo through corridors, making it difficult to determine their location.",
+    behavior: "Crawlers stalk prey from above, moving silently along ceilings until they're directly overhead. They emit rapid clicking sounds — both for echolocation and to disorient prey. They prefer tight spaces where their ceiling advantage is most effective. In open areas, they become more cautious. They are solitary hunters but multiple Crawlers may share a territory.",
+    survivalTips: [
+      "Always check ceilings when entering new rooms.",
+      "Clicking sounds mean a Crawler is using echolocation — it knows where you are.",
+      "Move to open, well-lit areas. They prefer enclosed spaces.",
+      "They cannot run as fast on smooth, wet surfaces.",
+      "If one drops from the ceiling, dodge sideways — they commit fully to their lunge."
+    ],
+    origin: "Crawlers are believed to be native Backrooms predators that evolved specifically for the built-environment hunting niche — tight corridors, low ceilings, and vertical surfaces. Their anatomy is perfectly adapted: joints that bend in any direction for wall and ceiling traversal, echolocation for navigation in low-light conditions, and a body shape optimized for dropping onto prey from above. M.E.G. biologists classify them as the Backrooms' equivalent of ambush spiders — sit-and-wait predators that have maximized efficiency in a specific hunting strategy. Their intelligence is debated; they show no signs of tool use or communication, but their ability to select optimal ambush positions suggests a sophisticated understanding of prey behavior. Camo Crawlers are considered an evolutionary advancement, suggesting that Crawlers are still adapting and becoming more effective hunters.",
+    foundIn: ["level-2", "level-5", "level-6", "level-3"],
+    tags: ["canon", "predator", "ceiling", "fast"]
+  },
+  {
+    id: "stalker",
+    name: "Stalker",
+    danger: 3,
+    classification: "Hostile",
+    description: "Stalkers are entities that exist partially out of phase with the Backrooms' reality. They appear as dark, humanoid silhouettes visible only in peripheral vision — when looked at directly, they vanish. They follow wanderers for extended periods, gradually moving closer over hours or days. Their endgame is unknown, as wanderers who allow a Stalker to reach them are found in a catatonic state with no memory of the encounter.",
+    behavior: "Stalkers are patient beyond measure. They will follow a single wanderer for days, always remaining in the peripheral vision, always slightly closer than the last time you noticed them. They cannot be confronted — looking directly at them causes them to phase out temporarily. They phase back in when the wanderer's attention lapses. Their approach is inevitable unless actively countered.",
+    survivalTips: [
+      "Check your peripheral vision regularly.",
+      "If you notice a shadow that moves when you don't, you have a Stalker.",
+      "Bright, direct light focused on their location forces them to reset their approach.",
+      "Travel with others — Stalkers usually attach to lone wanderers.",
+      "Changing levels breaks their pursuit. They cannot follow between levels."
+    ],
+    origin: "Stalkers exist partially outside the Backrooms' rendered reality, visible only in peripheral vision because they occupy a 'layer' of the Backrooms that direct observation cannot access. This phasing ability makes them one of the most theoretically significant entities — they prove that the Backrooms has depth, layers of reality stacked on top of each other. M.E.G. researchers using modified cameras (set to capture frames at irregular intervals) have managed to photograph Stalkers directly, revealing tall, thin humanoid figures with elongated limbs and faces that appear to be in a state of permanent anguish. The photographs suggest Stalkers are trapped between layers of reality, unable to fully enter or leave, and that their pursuit of wanderers is an attempt to anchor themselves to physical reality through the attention of a conscious observer. Their victims' catatonia may result from the Stalker finally achieving full contact and transferring its between-state existence to the wanderer.",
+    foundIn: ["level-5", "level-9", "level-13", "level-283"],
+    tags: ["canon", "phasing", "patient", "psychological"]
+  },
+  {
+    id: "the-thing-level-7",
+    name: "The Thing on Level 7",
+    danger: 5,
+    classification: "Hostile",
+    description: "The Thing on Level 7 is a colossal aquatic entity that dwells in the deepest waters of Level 7. It has never been fully seen — only its effects are observed. Massive waves from unseen movement, the pull of underwater currents from its passage, and the disappearance of anyone who enters deep water. Sonar readings by M.E.G. have returned results suggesting a creature hundreds of meters in length. It is the apex predator of Level 7.",
+    behavior: "The Thing patrols the deep waters of Level 7 in regular patterns. The water becomes unnaturally still before it passes — all other aquatic entities flee. It creates powerful underwater currents that can pull wanderers off platforms. It seems to be aware of any disturbance on the water's surface. It has never been observed to surface. M.E.G. considers it the single most dangerous entity in the Backrooms based on its apparent size.",
+    survivalTips: [
+      "Never enter water deeper than your waist on Level 7.",
+      "If the water goes perfectly still, get to the highest platform immediately.",
+      "It is attracted to splashing and vibration on the water's surface.",
+      "No weapon has ever been effective against it.",
+      "It cannot reach you on platforms that are high enough above the water."
+    ],
+    origin: "The Thing on Level 7 is the largest confirmed entity in the Backrooms and one of the least understood. Sonar data suggests a creature hundreds of meters in length with a body plan unlike any known organism — more like a living submarine than any biological creature. Its existence raises fundamental questions about the Backrooms' ecology: what does a predator of that size eat? The water of Level 7 does not appear to contain a food chain capable of sustaining it. Some researchers theorize it doesn't eat at all — that it is not a biological creature but a feature of the level itself, an embodied representation of the ocean's capacity for terror. The entities of Level 998 have carvings that depict what may be The Thing: a vast serpentine form in water, worshipped or feared by the alien civilization that built the city. If this identification is correct, The Thing predates human entry into the Backrooms by an incalculable span of time.",
+    foundIn: ["level-7"],
+    tags: ["canon", "aquatic", "colossal", "apex-predator", "unique"]
+  },
+  {
+    id: "transporter",
+    name: "Transporter",
+    danger: 2,
+    classification: "Neutral",
+    description: "Transporters are floating, geometric entities that resemble translucent polyhedra — like three-dimensional shapes made of frosted glass. They emit a soft humming sound and a warm glow. When touched, they teleport the wanderer to another location, usually another level. The destination is not random but follows a pattern that M.E.G. researchers have been unable to fully decode. Most destinations are relatively safe.",
+    behavior: "Transporters drift slowly through levels, seemingly aimless. They do not react to wanderers or entities. They simply exist and drift. Contact is required for transportation — they do not pull or attract. The destination seems partially influenced by the wanderer's subconscious desires, though this theory is debated. Multiple touches may lead to different destinations.",
+    survivalTips: [
+      "Touching a Transporter will teleport you. Be sure you want to leave.",
+      "Most destinations are safer than where you currently are.",
+      "You cannot control the exact destination.",
+      "They never transport to Deadzones — Level 666, Level 3999, or The Void.",
+      "They appear more frequently in stable, safe levels."
+    ],
+    origin: "Transporters are the most enigmatic neutral entities in the Backrooms. Their geometric, translucent forms bear no resemblance to any biological creature. M.E.G. physicists theorize they are not entities at all but autonomous functions of the Backrooms' infrastructure — mobile teleportation nodes that drift through levels, providing transportation as part of the system's design. Their tendency to avoid Deadzones supports this theory, as though they are programmed to deliver wanderers to survivable locations. Backrooms Robotics has attempted to capture and study a Transporter; the entity passed through the containment apparatus as though it were immaterial, suggesting it exists partially in the same phased state as Stalkers. The Followers of Jerry believe Transporters are 'kindnesses' — deliberate features placed by whatever designed the Backrooms to give wanderers a chance.",
+    foundIn: ["level-0", "level-4", "level-11", "level-37"],
+    tags: ["canon", "teleporter", "geometric", "neutral"]
+  },
+  {
+    id: "mangled",
+    name: "The Mangled",
+    danger: 4,
+    classification: "Hostile",
+    description: "The Mangled are entities that appear to be humans who have been physically distorted — limbs bent backward, torsos twisted, faces inverted. Despite their horrific appearance, they are fast and aggressive. They produce no sound, which makes them especially dangerous in low-visibility levels. They attack by grappling and twisting their victim's body to match their own contorted form.",
+    behavior: "The Mangled move in complete silence, which is their most dangerous trait. They navigate by some unknown sense, moving unerringly toward living humans. They attack by grabbing and physically contorting their victim — a process that takes only seconds and results in the victim becoming a new Mangled. They travel in groups of 2-4 and show rudimentary pack tactics.",
+    survivalTips: [
+      "They are completely silent. Visual awareness is your only defense.",
+      "Keep 360-degree awareness. Check behind you constantly.",
+      "Their contortion attack requires physical contact — maintain distance.",
+      "Fire deters them temporarily.",
+      "If you see one, assume others are nearby."
+    ],
+    origin: "The Mangled are converter entities — their attack physically transforms victims into new Mangled. The original source is unknown, but their contorted anatomy suggests they were once human, their bodies broken and rearranged by a force that preserved life but destroyed form. M.E.G. researchers have noted that The Mangled's distortions follow consistent patterns — always the same joints bent the same ways, as though following a blueprint. This suggests an intentional design rather than random violence. The complete silence of The Mangled is their most analyzed feature. They produce no sound at all — not even the sounds that physics demands (footsteps, breathing, the rustling of movement). This silence violation suggests they partially exist outside normal reality, similar to Stalkers but manifesting physically. The Kalag view them as 'sculptors' — beings that reshape human form into something the Backrooms prefers.",
+    foundIn: ["level-6", "level-2", "level-5", "level-389"],
+    tags: ["canon", "silent", "body-horror", "converter"]
+  },
+  {
+    id: "reviook",
+    name: "Reviook",
+    danger: 3,
+    classification: "Hostile",
+    description: "Reviooks are serpentine entities with bodies composed of interlinked bone-like segments. They range from 3 to 15 meters in length and move through tight spaces by compressing their segmented bodies. Their heads are eyeless but feature a circular mouth lined with rotating teeth, like a biological boring machine. They tunnel through walls and floors, creating the random holes and passages that connect rooms in many levels.",
+    behavior: "Reviooks are territorial burrowers. They create tunnel networks and aggressively defend them. They detect prey through vibration in walls and floors. When hunting, they burst from walls or floors without warning. They are most dangerous in confined spaces and are believed to be responsible for many of the random structural features of the Backrooms.",
+    survivalTips: [
+      "Fresh holes in walls or floors indicate recent Reviook activity.",
+      "Vibrations in walls may mean one is burrowing nearby.",
+      "Stay away from thin walls — they can burst through easily.",
+      "They have difficulty navigating open spaces. Flee to wide rooms.",
+      "Their tunnels sometimes create useful shortcuts, but entering them is risky."
+    ],
+    origin: "Reviooks are native Backrooms organisms that play a critical ecological role — they are the builders. Their burrowing creates the tunnels, passages, and random structural connections that define many levels. Without Reviooks, levels would be static, sealed environments with no connections. M.E.G. structural engineers have confirmed that many of the 'impossible' architectural features of the Backrooms — doors that lead to wrong rooms, hallways that connect levels, holes in floors that drop to other levels — were created by Reviook tunneling. Their bone-segment bodies and rotating tooth mouths are perfectly adapted for boring through any material the Backrooms uses: wallpaper and drywall, concrete, stone, metal, even the organic walls of Level 389. They are territorial because their tunnel networks are their life's work, and they defend them with the ferocity of any creature protecting its home.",
+    foundIn: ["level-2", "level-3", "level-8", "level-389"],
+    tags: ["canon", "burrower", "serpentine", "territorial"]
+  },
+  {
+    id: "camo-crawler",
+    name: "Camo Crawler",
+    danger: 4,
+    classification: "Hostile",
+    description: "Camo Crawlers are a variant of standard Crawlers that have evolved perfect camouflage. Their skin precisely mimics the surface they cling to — wallpaper, concrete, carpet, ceiling tiles. They are virtually invisible when stationary and only become visible during movement. They are patient beyond standard Crawlers, willing to remain motionless for hours until prey passes beneath them.",
+    behavior: "Camo Crawlers select a hunting spot and become invisible. They wait for prey to pass directly underneath, then drop. Their camouflage is so effective that even experienced wanderers walk past them regularly. The only telltale sign is a slight texture inconsistency on the surface they occupy — a barely perceptible bulge or color shift.",
+    survivalTips: [
+      "Scan surfaces for subtle inconsistencies — bumps, odd textures.",
+      "Throw small objects against walls/ceilings to force movement.",
+      "They shimmer slightly when transitioning surfaces.",
+      "UV light sometimes reveals their outline.",
+      "They avoid areas marked with human symbols — graffiti may save your life."
+    ],
+    origin: "Camo Crawlers represent an evolutionary branch of the standard Crawler lineage — proof that entities in the Backrooms continue to adapt and specialize over time. Their perfect camouflage is achieved through chromatophore-like cells in their skin that analyze and replicate the color, texture, and pattern of any surface they contact. This adaptation likely developed in response to wanderers becoming better at detecting standard Crawlers through ceiling checks and flashlight sweeps. The appearance of Camo Crawlers in Level 0 is particularly alarming, as standard Crawlers are not typically found there — it suggests they are expanding their range into previously safe territory. Backrooms Robotics has developed UV-spectrum flashlights specifically for detecting them, as their camouflage operates in the visible light spectrum but breaks down under ultraviolet illumination.",
+    foundIn: ["level-0", "level-1", "level-3", "level-5"],
+    tags: ["community", "predator", "camouflage", "ambush"]
+  },
+  {
+    id: "burster",
+    name: "Burster",
+    danger: 3,
+    classification: "Hostile",
+    description: "Bursters are bloated, humanoid entities filled with a corrosive, pressurized fluid. They stumble through corridors in apparent agony, their distended bodies swaying and pulsating. When they come within range of prey — or when sufficiently agitated — they violently rupture, spraying caustic fluid in all directions. The fluid dissolves organic matter on contact. After bursting, they slowly reform over several hours.",
+    behavior: "Bursters wander in a daze, seemingly in constant pain. They are drawn to noise and will stumble toward any sound source. When within approximately 5 meters of a living human, they begin to swell rapidly before detonating. The spray radius is about 10 meters. They can be heard approaching by their labored breathing and the gurgling of fluid within their bodies.",
+    survivalTips: [
+      "If you hear gurgling and heavy breathing, a Burster is near.",
+      "Maintain more than 10 meters of distance at all times.",
+      "They can be triggered to burst prematurely by loud noises from a safe distance.",
+      "The fluid dissolves organic matter but not metal or stone. Use cover.",
+      "After bursting, you have several hours before it reforms. Move quickly."
+    ],
+    origin: "Bursters are theorized to be the result of a failed biological process — entities whose bodies cannot properly contain the fluids they generate, resulting in a permanent state of painful over-pressurization. The caustic fluid they contain dissolves organic matter on contact but is chemically unique, not matching any known acid or base. M.E.G. chemists describe it as a 'biological solvent' that specifically targets carbon-based organic compounds while leaving inorganic materials unaffected. The humanoid shape of Bursters suggests a human origin, and the leading theory is that they are wanderers who consumed or were exposed to a substance (possibly Cashew Water in extreme quantities) that triggered an uncontrolled biological reaction, transforming them into pressurized vessels of caustic fluid. Their apparent pain and dazed behavior support this — they may be suffering victims, not malicious predators, driven toward humans by the remnants of social instinct.",
+    foundIn: ["level-2", "level-5", "level-6", "level-8"],
+    tags: ["canon", "explosive", "caustic", "area-denial"]
+  },
+  {
+    id: "neighborhood-watch",
+    name: "Neighborhood Watch",
+    danger: 3,
+    classification: "Hostile",
+    description: "The Neighborhood Watch are entities found in suburban levels that resemble homeowners' association members — middle-aged men and women in khakis and polo shirts, carrying clipboards. They patrol the streets enforcing 'rules' that change arbitrarily: lawn height, paint colors, noise levels, walking speed. Violations are punished with extreme prejudice. They speak in passive-aggressive tones right up until the moment they attack.",
+    behavior: "They patrol in pairs, inspecting houses and critiquing wanderers' 'compliance.' They are initially conversational and seemingly human, but their rules are impossible to follow consistently as they change without notice. Three violations results in 'enforcement action' — they become supernaturally fast and strong. They are most common in Level 9 and Level 283.",
+    survivalTips: [
+      "Be polite and compliant when first approached.",
+      "Ask what the current rules are — they will tell you.",
+      "Rules change every few hours. Stay alert to shifts.",
+      "After two violations, leave the area immediately.",
+      "They cannot follow you indoors — enter a house to escape."
+    ],
+    origin: "The Neighborhood Watch are among the most unsettling entities because they appear to be enforcement mechanisms of the suburban levels — entities generated by the levels themselves to maintain the illusion of a functioning community. Their rules, while arbitrary and changing, mirror the petty tyrannies of real homeowners' associations, suggesting they are drawn from the same source material as the suburb itself — human cultural memory, imperfectly replicated. Their transformation from passive-aggressive to supernaturally violent after three violations follows a programmatic logic, as though they are executing a penalty script. M.E.G. theorizes they are a more advanced form of Faceling — entities with scripted behaviors — but with enforcement capability built in. The Eternal Repository has documented over 200 distinct 'rules' enforced by the Neighborhood Watch, ranging from mundane ('Lawn height must not exceed 3 inches') to absurd ('All footwear must face magnetic north when removed') to sinister ('Residents must smile when observed').",
+    foundIn: ["level-9", "level-283"],
+    tags: ["community", "humanoid", "suburban", "rule-based"]
+  },
+  {
+    id: "window-entity",
+    name: "The Windows",
+    danger: 3,
+    classification: "Hostile",
+    description: "The Windows are entities that inhabit the glass panes of Level 188. They appear within the window scenes as versions of people the wanderer knew — family members, friends, loved ones. They beckon the wanderer to break the glass and join them. Their emotional pull is immense. If a wanderer breaks the glass, the entity within reaches through and attempts to pull them into the scene, where they are trapped in a memory that slowly degrades into nightmare.",
+    behavior: "These entities are patient and psychologically manipulative. They display perfect knowledge of the wanderer's personal relationships and use emotional leverage to tempt glass-breaking. They appear only in windows the wanderer is emotionally attached to. They can speak, though their words are muffled through the glass. Their voices are pitch-perfect imitations.",
+    survivalTips: [
+      "The people in the windows are NOT real. Repeat this to yourself.",
+      "Do not break any glass, no matter what you see.",
+      "If a figure in the window speaks your name, close your eyes and walk faster.",
+      "They cannot reach through intact glass.",
+      "Emotional preparation before entering Level 188 is essential."
+    ],
+    origin: "The Windows are entities unique to Level 188, and they appear to be parasites that feed on emotional distress. They generate their scenes by reading the wanderer's memories — a capability that implies direct access to the human mind, similar to Level 14's compulsion effect. The scenes they create are not merely visual; they include sound, smell, and emotional resonance that triggers genuine grief and longing. M.E.G. psychologists believe they are the level itself — that Level 188's windows are not windows at all but the feeding organs of an entity the size of a level, and the 'hallway' is its digestive tract. Each window is a lure customized for a specific prey item. The entity behind the glass that reaches through when the window breaks is theorized to be a pseudopod of this larger being, dragging prey into a memory-space where it is slowly consumed. If this theory is correct, Level 188 is not a level with entities — it is an entity that resembles a level.",
+    foundIn: ["level-188"],
+    tags: ["community", "psychological", "mimic", "emotional"]
+  }
+],
+
+// ── GROUPS ──────────────────────────────────────────────────
+groups: [
+  {
+    id: "meg",
+    name: "M.E.G.",
+    fullName: "Major Explorer Group",
+    alignment: "Friendly",
+    description: "The Major Explorer Group is the largest and most organized faction in the Backrooms. Founded by early wanderers who realized survival required cooperation, M.E.G. operates outposts across dozens of levels, documents entities and level properties, and provides aid to lost wanderers. They are the closest thing the Backrooms has to a government, though their authority is unofficial and unenforced. M.E.G. is structured into divisions: Exploration (level mapping and scouting), Research (entity study, Backrooms physics, chemistry), Operations (outpost management, supply logistics), and Security (defense against hostile entities and factions). They employ a rank system from Recruit to Overseer, with an elected Council of Five making major decisions. Their total active membership is estimated at 400-500 wanderers, with many more informal affiliates. They maintain radio networks, supply lines, and an inter-level messenger service that is the backbone of Backrooms communication.",
+    goals: "M.E.G.'s primary goals are mapping the Backrooms, cataloging entities, establishing safe zones, and ultimately finding a reliable way back to the Frontrooms. They maintain radio communication networks between outposts and publish survival guides. Internal politics are complex, with factions disagreeing on resource allocation and the ethics of Backrooms research. The Research division pushes for deeper exploration of dangerous levels (particularly Level 404 and Level 906) for scientific advancement, while Operations argues for consolidation of existing safe zones. The Security division clashes with both over whether military resources should be offensive (hunting entities) or defensive (fortifying outposts). The current Council majority favors a balanced approach, but dissatisfaction in the Research ranks has led to unauthorized expeditions and, in one case, a researcher defecting to Backrooms Robotics.",
+    history: "M.E.G. was founded by a group of twelve wanderers who independently reached Level 4 and recognized that organized cooperation was the only path to long-term survival. The original twelve drafted the M.E.G. Charter — a document that established their mission, structure, and ethical guidelines. Of the original twelve, three have since exited through The End (and presumably lost their memories), two were killed in the Crimson Order's first attack on Base Alpha, one became a Wretch, and the remaining six continue to serve in various capacities. The organization has weathered internal crises (the Sigma-404 controversy, where unauthorized experiments in Level 404 triggered a system reset), external threats (three Unbound attacks, ongoing Crimson Order border conflicts), and philosophical debates about whether the Backrooms should be escaped, understood, or accepted. Despite all this, M.E.G. endures as the primary force for order and knowledge in the Backrooms.",
+    operatesIn: ["level-0", "level-1", "level-4", "level-11", "the-hub"],
+    tags: ["canon", "major", "scientific", "humanitarian"]
+  },
+  {
+    id: "bntg",
+    name: "B.N.T.G.",
+    fullName: "Backrooms Nonaligned Trade Group",
+    alignment: "Neutral",
+    description: "The B.N.T.G. is a merchant collective that trades goods and information throughout the Backrooms. They maintain neutrality between all factions and will trade with anyone. Their network of traders moves between levels, carrying supplies, Almond Water, tools, and intelligence. They are shrewd negotiators and information brokers, and their knowledge of level connections rivals M.E.G.'s. The organization operates through a network of independent traders who pay dues for the B.N.T.G. brand, access to the trade network, and mutual protection agreements. A central Trade Council sets prices, mediates disputes, and negotiates route agreements with territorial factions. They have developed a barter currency system based on Almond Water units, with exchange rates for common goods standardized across their trading posts. Their intelligence operation is arguably more effective than M.E.G.'s — traders go everywhere, see everything, and report back to the Council.",
+    goals: "The B.N.T.G. prioritizes trade, profit, and maintaining neutrality. They believe the free flow of goods and information benefits all wanderers. They establish trading posts at major level junctions and charge for passage through certain controlled routes. They are not charitable, but they are fair — a deal with B.N.T.G. is a deal honored. Their long-term vision is a connected Backrooms economy where every level is linked by trade routes and every wanderer has access to the supplies they need — for a price. They invest heavily in route security, hiring guards for their caravans and paying 'toll agreements' to the Crimson Order for safe passage through contested territory. Critics call them war profiteers for trading with hostile factions, but B.N.T.G. argues that even enemies need supplies, and a trading relationship is the first step toward peace.",
+    history: "B.N.T.G. was founded by three former wanderers who recognized that the Backrooms' greatest scarcity was not food or water but information and logistics. The founders — a former supply chain manager, a military quartermaster, and a barterer who had survived six months alone — established the first trading post in Level 4's lobby and offered a simple deal: bring something to trade, and we'll match you with someone who needs it. The organization grew rapidly as wanderers realized that centralized trade was more efficient than individual scavenging. B.N.T.G.'s strict neutrality has been tested repeatedly — most notably when the Crimson Order demanded exclusive trading rights in Level 2, which B.N.T.G. refused. The resulting trade embargo lasted three months before the Crimson Order relented, having discovered that controlling territory is meaningless without supplies.",
+    operatesIn: ["level-1", "level-4", "level-11", "the-hub", "level-37"],
+    tags: ["canon", "trade", "neutral", "information"]
+  },
+  {
+    id: "followers-of-jerry",
+    name: "Followers of Jerry",
+    fullName: "The Followers of Jerry",
+    alignment: "Friendly",
+    description: "The Followers of Jerry are a quasi-religious group devoted to the entity known as Jerry. They believe Jerry is a prophet or savior figure who holds the key to understanding the Backrooms. They are generally peaceful and helpful, sharing resources with wanderers and spreading Jerry's practical survival advice. Jerry himself is reportedly uncomfortable with the group's devotion. The group numbers approximately 80 members and operates as a decentralized community united by shared belief rather than hierarchy. They maintain 'Jerry Shelters' — small supply caches and rest areas marked with a distinctive 'J' symbol — throughout safe levels. Their practical knowledge is excellent, as Jerry's advice forms the basis of their survival training. New members undergo a period of mentorship where experienced Followers teach Jerry's navigation techniques and entity avoidance strategies.",
+    goals: "They seek to spread Jerry's teachings (practical survival wisdom), build shelters for wanderers, and ultimately understand Jerry's nature and origin. They believe Jerry knows the way out of the Backrooms and that by following his path, they will find liberation. Jerry has neither confirmed nor denied this. Internal debate exists between 'Literalists' who believe Jerry will personally lead them to freedom, and 'Interpreters' who believe Jerry's teachings are metaphorical — that his message is about finding peace within the Backrooms rather than escaping them. Both factions agree on practical action: helping wanderers, maintaining shelters, and documenting Jerry's appearances and advice.",
+    history: "The Followers began when a wanderer named Elena, rescued from Level 6 by Jerry, devoted herself to finding him again and recording his teachings. She encountered other wanderers with similar experiences — people saved by Jerry at their lowest moments — and they formed a community bound by gratitude and curiosity. The group grew through genuine good works rather than recruitment, and their reputation for helpfulness has made them welcome in most settlements. Jerry's relationship with the group is complex: he appreciates their kindness to other wanderers but visibly winces at religious language applied to him. He has asked them multiple times to stop worshipping him. They interpret his humility as further proof of his worthiness.",
+    operatesIn: ["level-0", "level-1", "level-4", "level-11"],
+    tags: ["canon", "religious", "friendly", "jerry"]
+  },
+  {
+    id: "the-lost",
+    name: "The Lost",
+    fullName: "The Lost",
+    alignment: "Neutral",
+    description: "The Lost are wanderers who have given up on escaping the Backrooms and instead embrace their new reality. They are nomadic, traveling between levels and living off what they find. They are neither hostile nor particularly helpful — they simply exist, moving through the Backrooms like driftwood. Many are psychologically broken, though some have found a strange peace in accepting their situation. The Lost are not an organization in any formal sense — they have no leadership, no charter, no meetings. The name was given to them by M.E.G. researchers who noticed recurring individuals drifting through outposts, taking nothing, offering nothing, and moving on. Some Lost walk the same routes endlessly, like human Facelings. Others actively explore, driven not by purpose but by the simple need for something new. A few have become legendary — wanderers who have traversed more levels than any M.E.G. explorer, not because they sought knowledge, but because they had nowhere to be and all of eternity to get there.",
+    goals: "The Lost have no collective goals. Individual members may seek specific levels rumored to be comfortable, or they may simply wander. They sometimes form temporary communities that dissolve as members drift apart. They are a sobering reminder that not everyone who enters the Backrooms finds purpose or escape. M.E.G. sociologists study The Lost as a case study in long-term psychological adaptation to the Backrooms. Interestingly, The Lost have the lowest entity encounter rate of any group — their lack of emotional intensity seems to make them invisible to entities that hunt by emotion (Dullers, Stalkers) and their constant movement keeps them ahead of territorial predators. Some M.E.G. researchers privately admit that The Lost may have accidentally discovered the optimal survival strategy: expect nothing, want nothing, keep moving.",
+    history: "The Lost have existed as long as humans have been in the Backrooms — they are the inevitable result of hope wearing thin. The name became formalized when a M.E.G. census attempted to count non-affiliated wanderers and found hundreds who fit no faction category. A Lost wanderer named Compass became briefly famous for creating the most detailed hand-drawn map of the Backrooms ever produced — not through organized exploration, but through decades of aimless walking with a pen and paper. The map, now housed in the Eternal Repository, covers more territory than M.E.G.'s official maps. Compass himself is still walking.",
+    operatesIn: ["level-0", "level-1", "level-9", "level-10", "level-808"],
+    tags: ["canon", "nomadic", "passive", "philosophical"]
+  },
+  {
+    id: "backrooms-robotics",
+    name: "Backrooms Robotics",
+    fullName: "Backrooms Robotics",
+    alignment: "Neutral",
+    description: "Backrooms Robotics is an enigmatic group of engineers and scientists who build and maintain automated systems throughout the Backrooms. They construct robots, automated defenses, and communication systems. Their technology is advanced — possibly incorporating Backrooms-native materials with unusual properties. They are secretive about their methods and recruit only those with technical skills. Their workshop in Level 11's industrial district is heavily fortified and off-limits to non-members. Inside, they manufacture everything from simple radios to autonomous exploration drones using a combination of Frontrooms electronics (scavenged from levels that mimic real-world environments) and Backrooms-native materials — crystal from Level 998, bioluminescent fungi compounds, and the amber resin from Level 389. Their crowning achievement is the 'Pathfinder' drone series, which can navigate dangerous levels autonomously and transmit data back to their relay network.",
+    goals: "Backrooms Robotics aims to automate exploration and security within the Backrooms. They build scouting drones, defensive turrets for outposts, and communication relays. They believe technology is the key to surviving and eventually mastering the Backrooms. They trade their devices with other groups for resources. Their ultimate ambition is to crack the Backrooms' underlying system — they are the faction most invested in the 'simulation hypothesis' and believe that Level 404 and Level 906 hold the keys to understanding and potentially controlling the Backrooms at a system level. This ambition puts them at philosophical odds with groups like the Unbound and the Kalag, who view such efforts as blasphemous, and at practical odds with M.E.G., whose Safety division considers their experiments reckless.",
+    history: "Backrooms Robotics was founded by Dr. Yuki Tanaka, a robotics engineer who noclipped into the Backrooms from her MIT laboratory. She quickly recognized that the Backrooms' environmental challenges were engineering problems waiting for engineering solutions. She recruited two other technically skilled wanderers and began building with whatever materials she could find. Their first successful creation — a simple wheeled drone with a camera — mapped more of Level 2 in one day than M.E.G. had managed in months. The organization grew through selective recruitment, prioritizing engineers, programmers, and scientists. Their relationship with M.E.G. is their most complex alliance — they collaborate on research (especially the Level 906 joint station) but clash over safety protocols and the ethics of experimentation. The Level 404 reset incident, caused by a Backrooms Robotics researcher attempting to access the system, resulted in a temporary severance of the alliance that took months of negotiation to repair.",
+    operatesIn: ["level-3", "level-4", "level-906", "level-11"],
+    tags: ["canon", "technology", "engineering", "secretive"]
+  },
+  {
+    id: "backrooms-colonists",
+    name: "Backrooms Colonists",
+    fullName: "The Backrooms Colonists",
+    alignment: "Friendly",
+    description: "The Backrooms Colonists are wanderers who have decided to build permanent settlements within the Backrooms rather than search for an exit. They establish farms, water purification systems, and defensive structures in safe levels. They welcome newcomers and focus on building a sustainable community. They represent the pragmatic acceptance that escape may be impossible, and that building a life here is the next best option. Their largest settlement, 'New Haven,' occupies several blocks of Level 11 and houses over 150 permanent residents. It features communal gardens grown under fluorescent light, a medical clinic staffed by two former doctors, a school for the settlement's twelve children (the first generation born in the Backrooms), and a defensive perimeter equipped with Backrooms Robotics turrets. They have achieved a remarkable accomplishment: the cultivation of Almond Water from a naturally occurring spring in Level 37, providing a sustainable source of the Backrooms' most critical resource.",
+    goals: "Establish self-sustaining communities in safe levels. They focus on agriculture (some Backrooms plants are cultivable), water management (Almond Water cultivation), and defensive infrastructure. They actively recruit skilled wanderers — doctors, engineers, farmers. Their vision is nothing less than civilization-building — they want to create a society within the Backrooms that can persist indefinitely, complete with governance, education, healthcare, and culture. They maintain a 'Wanted Skills' board at every M.E.G. outpost, listing the professions they most need. Current priorities include electrical engineers, teachers, and anyone with agricultural experience.",
+    history: "The Colonists were founded by Marcus Webb, a former urban planner who argued that searching for an exit was statistically futile and that the only rational response was to build a permanent home. His first settlement attempt in Level 9 failed disastrously due to Skin-Stealer infiltration. The second attempt, in Level 11, succeeded beyond expectations. New Haven has grown from a handful of tents to a functioning small town over the course of two years. The birth of the first child in the Backrooms — a girl named Hope — was a watershed moment for the community and the wider Backrooms population. The Colonists' success has inspired satellite settlements in Level 4 and Level 37, and their agricultural techniques have been adopted by M.E.G. outposts. The Unbound view them as their ideological enemy, and three attacks on New Haven have tested but not broken the community's resolve.",
+    operatesIn: ["level-4", "level-11", "level-37", "the-promised-land"],
+    tags: ["canon", "settlers", "community-building", "agriculture"]
+  },
+  {
+    id: "the-unbound",
+    name: "The Unbound",
+    fullName: "The Unbound",
+    alignment: "Hostile",
+    description: "The Unbound are an extremist faction that believes the Backrooms is the 'true' reality and the Frontrooms is the illusion. They actively prevent wanderers from seeking exits and have been known to destroy M.E.G. outposts and navigation markers. They worship the Backrooms as a living entity and consider entity attacks to be 'purification.' They are dangerous zealots. They operate in cells of 5-10 members, making them difficult to track or confront. Members undergo indoctrination rituals in Level 666, exposure to extreme Backrooms environments intended to 'burn away' attachment to the Frontrooms. Survivors of the ritual emerge fanatically devoted. They mark their territory with a symbol resembling an open eye — spray-painted on walls near sabotaged navigation markers and destroyed supply caches. They are the most feared human faction in the Backrooms.",
+    goals: "The Unbound seek to prevent escape from the Backrooms, destroy organizations that map or study it, and convert wanderers to their belief system. They sabotage exit routes, spread misinformation about level connections, and have been responsible for several outpost attacks. M.E.G. considers them a high-priority threat. Their ultimate goal is the 'Great Unbinding' — an event they believe will merge the Backrooms with the Frontrooms, making the Backrooms' reality universal. They believe this can be achieved by destroying all paths to The End and opening The Door in Level 3999. Their theology is sophisticated despite its extremism: they argue that human suffering in the Backrooms is caused by resistance, and that accepting the Backrooms as home eliminates the psychological damage it causes. There is enough truth in this to make their recruitment effective among desperate wanderers.",
+    history: "The Unbound were founded by a former M.E.G. researcher named Dr. Alexei Volkov, who spent fourteen months lost in the deep levels before being recovered in a state of religious ecstasy. He declared that he had 'heard the Backrooms speak' and that it was alive, conscious, and good. His charisma attracted followers from among the most traumatized wanderers — people who needed meaning in their suffering. The faction grew rapidly in the early days before M.E.G. recognized the threat. Their first major attack destroyed Outpost Charlie in Level 1, killing two M.E.G. operatives. Since then, they have been in a state of cold war with M.E.G. and the Colonists. Volkov himself was last seen entering Level 3999 alone, reportedly to commune with the Backrooms at its deepest point. He has not returned, but the Unbound await his return with messianic anticipation.",
+    operatesIn: ["level-2", "level-5", "level-666", "level-3999"],
+    tags: ["canon", "hostile", "extremist", "cult"]
+  },
+  {
+    id: "crimson",
+    name: "Crimson",
+    fullName: "The Crimson Order",
+    alignment: "Hostile",
+    description: "The Crimson Order is a militaristic faction that controls territory through force. They wear red armbands and maintain strict hierarchies. They claim ownership of certain levels and demand tribute from wanderers passing through their territory. They are well-armed with improvised weapons and have developed combat tactics specifically designed for Backrooms environments. Their military structure mirrors real-world hierarchies: soldiers, sergeants, captains, and a Commander-General who is elected through combat trial. They maintain fortified positions at choke points between levels, controlling access and charging tolls. Their weapons include Firesalt grenades, sharpened pipe weapons, improvised crossbows, and Almond Water squirt guns modified for pressure and range. They are the best-organized fighting force in the Backrooms, and while their methods are brutal, their territories are notably free of entity incursions — they hunt and clear hostile entities from their controlled zones.",
+    goals: "Territorial control and resource monopolization. They extract tribute (supplies, Almond Water, information) from wanderers in exchange for 'protection.' They are expansionist, constantly seeking to control more levels and resources. They clash frequently with M.E.G. and B.N.T.G. Their stated philosophy is that strength is the only currency that matters in the Backrooms, and that the weak benefit from the strong's protection whether they acknowledge it or not. Critics call them warlords. Supporters — and there are some — point out that Crimson-controlled corridors in Level 2 are the safest passages in one of the deadliest levels. They seek to eventually control all transit routes between major levels, creating a toll-based empire that makes them indispensable.",
+    history: "The Crimson Order was founded by a former military officer known only as 'The Colonel,' who argued that the cooperative, democratic approach of M.E.G. was insufficient for the threats of the Backrooms. He recruited wanderers with military, law enforcement, or martial arts backgrounds and established the first Crimson outpost in Level 2 — a level no other faction could hold due to its dangers. Their control of Level 2 gave them control of crucial transit routes, which they leveraged into power. The 'Corridor Wars' with M.E.G. established current territorial boundaries. B.N.T.G.'s pragmatic decision to trade with the Crimson Order (over M.E.G.'s objections) gave them economic legitimacy. The Colonel was killed during a Hound pack ambush three years into the faction's existence, and the combat trial tradition for succession began. The current Commander-General, a woman known as 'Red,' is the fourth to hold the title.",
+    operatesIn: ["level-1", "level-2", "level-5", "level-8"],
+    tags: ["canon", "military", "hostile", "territorial"]
+  },
+  {
+    id: "masked-maidens",
+    name: "The Masked Maidens",
+    fullName: "The Masked Maidens",
+    alignment: "Neutral",
+    description: "The Masked Maidens are a mysterious group of women wearing ornate porcelain masks. They appear in levels associated with art, performance, and memory. They communicate through dance and gesture, rarely speaking. They seem to have an unusual understanding of the Backrooms' deeper nature and occasionally guide wanderers to safety through cryptic performances that encode navigation instructions. Each Maiden wears a unique mask — white porcelain with painted expressions ranging from serene to anguished — and flowing garments that seem to shift color with movement. They move with preternatural grace, their dances incorporating gestures that trained observers have learned to interpret as directional cues, level warnings, and entity alerts. They travel in groups of three to seven and appear without warning, perform, and vanish. No one has ever seen a Masked Maiden eat, sleep, rest, or speak more than a handful of words.",
+    goals: "Their true goals are unknown. They seem to preserve something — knowledge, memory, or art — through their performances. They neither help nor hinder most wanderers unless their rituals are interrupted. Those who watch their full performances sometimes gain intuitive knowledge of nearby level exits. The Eternal Repository has spent years attempting to decode the Maidens' dance language and has produced a partial dictionary of approximately 60 gestures. A clockwise spiral means 'safe passage ahead.' A sharp downward sweep means 'danger, turn back.' Two Maidens mirroring each other means 'level boundary nearby.' Their performances in the amphitheaters of Level 998 are their longest and most complex, lasting hours and incorporating gestures that have no translation — movements that may encode information about the Backrooms' deepest secrets.",
+    history: "The Masked Maidens have no known founding date — they appear to have existed in the Backrooms before organized human exploration began. The earliest M.E.G. records reference them, and the glyphs of Level 998 include carvings that unmistakably depict masked, dancing figures. This predating raises the most important question about them: are they human? They appear female and human-proportioned, but no one has ever seen beneath a mask, and their silence, their grace, and their apparent immunity to entities suggest something more. A wanderer once reportedly removed a Maiden's mask during a performance; the other Maidens immediately stopped dancing and turned toward the offender. The wanderer was found the next day in Level 0, alive but missing all memories of the encounter. The maskless Maiden was never seen again. M.E.G. strictly forbids interference with Maiden performances.",
+    operatesIn: ["level-5", "level-188", "level-998", "level-808"],
+    tags: ["canon", "mysterious", "artistic", "cryptic"]
+  },
+  {
+    id: "eternal-repository",
+    name: "The Eternal Repository",
+    fullName: "The Eternal Repository",
+    alignment: "Friendly",
+    description: "The Eternal Repository is a group dedicated to collecting and preserving all knowledge within the Backrooms. They maintain libraries in several levels, filled with journals from wanderers, entity research, level maps, and texts that seem to have originated from within the Backrooms itself. They welcome all visitors and freely share their knowledge. Their only rule: if you read, you must also contribute. Their main library in Level 4's east wing contains over 4,000 documents — journals, maps, scientific papers, artwork, and poetry — all cataloged and cross-referenced by a team of dedicated archivists. Smaller satellite collections exist in Level 11 and Level 998. They employ a unique filing system that organizes documents by level, entity, and emotional content (a classification axis no other group uses). Their most prized collection is the 'Anomalous Texts' section — documents that appear to have been written by non-human intelligences, found in levels rather than brought by wanderers.",
+    goals: "Preserve all knowledge. They collect journals, maps, research notes, and oral histories from wanderers. They believe understanding the Backrooms is the first step to surviving it. They maintain the largest collection of level documentation outside of M.E.G. and their archives are open to all. Beyond passive collection, they actively commission research: sending teams to photograph Level 998's glyphs, recording the Masked Maidens' dances, transcribing the data streams in Level 906, and documenting the oral histories of long-term wanderers before their memories degrade. Their ambition is to produce the definitive 'Encyclopedia of the Backrooms' — a comprehensive reference work that would be the single most valuable document ever created within this reality. The project is approximately 30% complete.",
+    history: "The Eternal Repository was founded by a former university librarian named Margaret Chen, who recognized that knowledge was being lost as wanderers died, forgot, or passed through The End. She began collecting journals in Level 4, starting with her own detailed observations and expanding as other wanderers contributed. Her philosophy — 'knowledge freely shared is knowledge that survives' — attracted academics, writers, and researchers who valued intellectual pursuit even in survival conditions. The Repository's most controversial moment came when they acquired a Kalag defector's journal containing detailed entity-communication rituals. M.E.G. Security demanded the journal be destroyed; Margaret refused, arguing that censorship was antithetical to the Repository's mission. The compromise: the journal remains in a sealed section accessible only with joint M.E.G./Repository authorization. Margaret continues to lead the organization, and her encyclopedic knowledge of Backrooms lore makes her one of the most respected individuals in any faction.",
+    operatesIn: ["level-4", "level-11", "level-906", "level-998"],
+    tags: ["canon", "knowledge", "library", "academic"]
+  },
+  {
+    id: "kalag",
+    name: "Kalag",
+    fullName: "The Kalag",
+    alignment: "Hostile",
+    description: "The Kalag are a cult that has learned to partially communicate with entities. They use this ability to direct entities against their enemies and to navigate dangerous levels that would be impassable for normal wanderers. Their rituals involve blood sacrifice and the consumption of substances derived from entity remains. They are feared by all other factions. Members undergo progressive transformation through their rituals: early-stage Kalag show minor physical changes (slightly luminous eyes, skin that is cool to the touch, a faint chemical odor). Advanced members display more dramatic alterations — inhuman joint flexibility, resistance to extreme temperatures, and the ability to produce pheromones that calm certain entity species. The most transformed Kalag are barely recognizable as human, existing in a twilight state between wanderer and entity that is both their aspiration and their horror.",
+    goals: "The Kalag seek to become one with the Backrooms by transcending humanity. Their rituals aim to transform members into entity-human hybrids. They have allegedly succeeded in some cases, creating beings that are neither fully human nor fully entity. They attack wanderers to use as subjects in their transformation experiments. Their theological framework posits that humanity is an incomplete form, and that the entities of the Backrooms represent a more evolved state of being. They believe the entity civilization of Level 998 achieved transcendence through the transformation process the Kalag now practice. Their endgame is the creation of a 'Perfect Form' — a being that combines human intelligence with entity abilities, capable of navigating the Backrooms without limitation and communicating with all entity species. Whether this goal is achievable or merely the delusion of a dangerous cult remains the subject of heated debate.",
+    history: "The Kalag originated when a wanderer named Samir al-Rashid discovered that consuming certain preparations of entity biological material produced temporary physiological changes — heightened senses, reduced pain, and what he described as 'hearing the Backrooms think.' He shared his discovery with others, and the group that formed around him rapidly evolved from experimental to ritualistic. Al-Rashid himself underwent extensive transformation and is now regarded as the cult's 'First Voice' — a leader who communicates in a blend of human language and entity-derived sounds that only other Kalag can fully understand. Their entity-communication ability is real and documented — M.E.G. has observed Kalag members calming Hound packs and redirecting Smilers. This makes them simultaneously the most dangerous and most scientifically interesting faction. M.E.G. has made multiple attempts to open a research dialogue with the Kalag, all rebuffed violently. The Kalag view M.E.G.'s approach as insufficient — studying entities from a distance rather than becoming them.",
+    operatesIn: ["level-389", "level-666", "level-998", "level-6"],
+    tags: ["canon", "cult", "hostile", "entity-communication"]
+  },
+  {
+    id: "survivors",
+    name: "Survivors",
+    fullName: "The Survivors",
+    alignment: "Friendly",
+    description: "The Survivors are a grassroots mutual aid network of wanderers who help newcomers navigate the first days in the Backrooms. They are not a formal organization but a loose collection of experienced wanderers who remember how terrifying their first hours were. They leave supply caches, mark safe routes with consistent symbols, and maintain a buddy system for new arrivals in Level 0. The network operates through approximately 40 active volunteers who rotate shifts in Level 0, watching for signs of new arrivals — confused wanderers stumbling through hallways, crying, screaming, or frozen in shock. Each Survivor carries a 'Welcome Kit' containing Almond Water, a basic flashlight, a hand-drawn map of the nearest safe route to Level 1 or Level 4, a one-page entity guide with illustrations, and a note that reads: 'You are not alone. You are not crazy. This is real, and you can survive. Follow the circles.' That note has saved more lives than any weapon in the Backrooms.",
+    goals: "Help new wanderers survive their first 72 hours in the Backrooms. They maintain a symbol system (circle = safe, X = danger, arrow = direction) painted on walls throughout early levels. They distribute starter kits containing basic supplies, a map of Level 0, and a guide to common entities. Beyond immediate survival, they aim to connect newcomers with the broader Backrooms community — directing them toward M.E.G. outposts, B.N.T.G. trading posts, or Colonist settlements depending on the individual's skills and temperament. They also maintain a 'Missing Board' at their Level 0 base camp — photos and descriptions of wanderers who have been reported missing by their companions, in the hope that someone, somewhere, has seen them. The board currently holds over 200 entries. Thirty-seven have been resolved.",
+    history: "The Survivors formed organically — no founder, no charter, no formal beginning. Individual wanderers who remembered the terror of their own arrival began independently leaving supply caches and route markers in Level 0. When these individuals encountered each other, they realized they were all doing the same thing and decided to coordinate. The symbol system was standardized by a former graphic designer who argued that universal, language-independent symbols would be most effective. The circle/X/arrow system is now the most recognized marking in the Backrooms, understood by wanderers of every faction and nationality. The Survivors have a unique status among factions: no group, however hostile, has ever attacked them. Even the Crimson Order respects their work, and the Unbound — who destroy M.E.G. markers — leave Survivor symbols untouched. Jerry has been seen replenishing Survivor supply caches when no one is watching.",
+    operatesIn: ["level-0", "level-1", "level-4", "level-37"],
+    tags: ["canon", "humanitarian", "grassroots", "newcomer-support"]
+  }
+],
+
+// ── OBJECTS ─────────────────────────────────────────────────
+objects: [
+  {
+    id: "almond-water",
+    name: "Almond Water",
+    danger: 1,
+    classification: "Safe",
+    description: "Almond Water is the single most important resource in the Backrooms. Found in bottles, vending machines, and occasionally pooling naturally, it is a slightly cloudy liquid with a faint almond taste. It cures sanity degradation, heals minor wounds, provides hydration and nutrition, and can even reverse early-stage entity transformation. It is the currency of survival. The liquid is slightly opalescent, with a viscosity marginally thicker than regular water. When held to light, faint iridescent swirls are visible — a property M.E.G. chemists have been unable to explain, as chemical analysis shows nothing that should produce the effect. It tastes of almonds with a subtle sweetness and a clean, mineral finish. Fresh Almond Water — found in natural springs rather than bottles — is reportedly more potent, with a stronger taste and more pronounced healing effects. The Backrooms Colonists have identified three natural springs: two in Level 37 and one deep in Level 8.",
+    effects: "Restores mental clarity and reduces insanity effects. Provides hydration equivalent to regular water but with added nutritional value. Accelerates healing of minor injuries. Can reverse early-stage Partygoer conversion if administered quickly. Repels some entities when splashed on the skin. Large quantities can purify contaminated water sources. M.E.G. medical researchers have documented the following dosage effects: 100ml restores baseline mental clarity after mild sanity decay. 250ml reverses moderate psychological degradation and heals minor cuts and bruises within hours. 500ml can reverse early-stage Partygoer conversion if administered within 30 minutes of exposure. One liter, applied externally, creates an entity-repellent barrier lasting approximately two hours. The Backrooms Colonists have developed concentrated Almond Water ('Almond Extract') that delivers the equivalent of one liter's effects in a single 50ml dose, though the taste is intensely bitter.",
+    history: "Almond Water was among the first Backrooms resources identified by early wanderers, and its discovery fundamentally changed the survival calculus. Before Almond Water, the Backrooms was considered invariably fatal over time — sanity decay would eventually claim every wanderer. The realization that a naturally occurring substance could reverse the decay gave humanity a fighting chance. M.E.G.'s first research priority was understanding Almond Water's properties, and their analysis revealed a complex chemical signature unlike any Frontrooms substance — over 200 unique compounds, many of which have no terrestrial analogue. The B.N.T.G. formalized it as currency, establishing exchange rates (one bottle of Almond Water = one 'unit') that underpin the entire Backrooms economy. The Backrooms Colonists' successful cultivation of natural Almond Water springs is considered one of the greatest achievements in Backrooms history, as it transforms the resource from scavenged to renewable.",
+    foundIn: ["level-0", "level-1", "level-4", "level-11", "level-37"],
+    tags: ["consumable", "healing", "essential", "currency", "iconic"]
+  },
+  {
+    id: "royal-rations",
+    name: "Royal Rations",
+    danger: 1,
+    classification: "Safe",
+    description: "Royal Rations are sealed MRE-style packages containing high-calorie, nutrient-dense food that never expires. Each package contains enough sustenance for 72 hours. The food inside varies but is always edible and filling. They are marked with a golden crown symbol and are rarer than Almond Water. Some wanderers report the food tastes like their favorite meal from the Frontrooms. The packages themselves are made of a durable, matte-gold material that resists tearing, moisture, and heat. The crown symbol is embossed, not printed, and glows faintly in low light. Inside, the food appears as a dense, uniform bar or paste, but the texture and taste change to match the consumer's subconscious desires — one wanderer tastes their grandmother's cooking, another their favorite restaurant meal. The effect is so personal and so accurate that it has reduced hardened wanderers to tears.",
+    effects: "Provides three days of nutrition in a single package. The food adapts its taste to the consumer's preferences. Boosts morale significantly — the psychological effect of a 'good meal' in the Backrooms cannot be understated. Does not require water or preparation. M.E.G. nutritional analysis shows that the food bar contains a perfect balance of macronutrients, vitamins, and minerals — more complete than any Frontrooms MRE. The taste-adaptation property defies chemical analysis; the food's molecular structure doesn't change between consumers, yet different people perceive completely different flavors. Researchers theorize the adaptation occurs in the brain rather than the food, suggesting Royal Rations contain a mild psychoactive compound that activates taste memory. Consuming a Royal Ration while severely sanity-degraded has been reported to trigger vivid Frontrooms memories, providing a powerful anchoring effect.",
+    history: "Royal Rations are found exclusively in specific locations — Level 4 vending machines, Level 11 restaurant kitchens, Level 1 supply crates, and The Hub's central table. They have never been found in hostile levels. This distribution pattern has led M.E.G. to theorize they are deliberately placed by whatever system governs the Backrooms, as provisions for wanderers in safe zones. The golden crown symbol matches no known organization, brand, or heraldry from the Frontrooms. B.N.T.G. trades them at premium prices — approximately five units of Almond Water per ration. The Backrooms Colonists have attempted to reverse-engineer them without success; the packaging material and food compound resist all analysis, dissolving into inert residue when examined at the molecular level.",
+    foundIn: ["level-4", "level-11", "level-1", "the-hub"],
+    tags: ["consumable", "nutrition", "rare", "morale"]
+  },
+  {
+    id: "firesalt",
+    name: "Firesalt",
+    danger: 2,
+    classification: "Caution",
+    description: "Firesalt is a crystalline substance found in Level 8 and other underground levels. It resembles coarse red salt and ignites spontaneously when exposed to moisture, including sweat. It burns intensely for several minutes, producing heat and light without fuel. When handled with dry gloves, it is a versatile tool — a fire starter, weapon, and entity deterrent. Mishandled, it causes severe burns. The crystals range in color from deep crimson to translucent orange and grow in veins within limestone and concrete walls, often alongside the bioluminescent fungi of Level 8. Raw Firesalt deposits glow faintly red in darkness, making them identifiable but also marking the areas as high-humidity danger zones where spontaneous ignition is possible. The crystals are extracted using dry ceramic tools — metal tools can create sparks that ignite surrounding deposits. Backrooms Robotics has developed sealed Firesalt containers that keep the crystals in an anhydrous environment until needed.",
+    effects: "Ignites on contact with moisture, burning at extreme temperatures. Can be used as an improvised weapon against entities (especially effective against Hounds and organic entities). Provides emergency light and heat. Mixed with dry sand, it can create delayed-ignition traps. Handle only with completely dry, non-porous gloves. The Crimson Order has weaponized Firesalt extensively: Firesalt grenades (crystals wrapped in water-soaked cloth, thrown to burst on impact), Firesalt perimeter lines (crystals arranged around a campsite that ignite if anything wet — like an entity — crosses them), and Firesalt-tipped crossbow bolts (which ignite upon penetrating a target's moist tissue). M.E.G. has incorporated Firesalt into their Smiler Repellent formula, and Backrooms Robotics uses controlled Firesalt reactions to power some of their devices.",
+    history: "Firesalt was discovered by the first B.N.T.G. trader to explore Level 8, who accidentally ignited a deposit with their sweaty hands and suffered severe burns. The substance was initially considered purely hazardous until the Crimson Order recognized its weapon potential and began systematic mining operations. The joint M.E.G./B.N.T.G. mining expeditions in Level 8 are one of the few examples of cross-faction economic cooperation, driven by the universal utility of the resource. Firesalt is the second most traded commodity after Almond Water, and B.N.T.G. sets its price at approximately two units of Almond Water per 50-gram pouch. The substance's origin is unknown — it doesn't match any Frontrooms mineral, and M.E.G. geologists classify it as a 'Backrooms-native compound' that may be related to the same system that produces Almond Water.",
+    foundIn: ["level-8", "level-2", "level-3", "level-666"],
+    tags: ["tool", "weapon", "fire", "dangerous"]
+  },
+  {
+    id: "lucky-o-milk",
+    name: "Lucky O' Milk",
+    danger: 2,
+    classification: "Caution",
+    description: "Lucky O' Milk is a green-tinged milk found in sealed cartons marked with a four-leaf clover. Drinking it temporarily enhances luck — exit doors appear more frequently, entity encounters decrease, and supplies are easier to find. However, when the effect wears off (approximately 6 hours), the opposite occurs: a period of terrible luck. Many wanderers consider the crash not worth the boost. The cartons are standard half-pint milk containers in bright green, with a cheerful four-leaf clover logo and the brand name 'Lucky O'' in flowing script. The milk itself is pale green, tastes mildly of mint and vanilla, and has a creamy consistency. It never spoils — sealed cartons found in Level 4 vending machines have been tested months later with no degradation. The green tint becomes more vivid the 'luckier' the batch, though how luck is measured in a liquid is a question that has frustrated M.E.G. chemists.",
+    effects: "6-hour luck enhancement: increased chance of finding exits, supplies, and safe paths. Followed by a 6-hour luck deficit: increased entity encounters, dead ends, and equipment failures. The net effect is debated. Some use it strategically before dangerous level transitions. Consuming more than one carton in 24 hours causes severe nausea with no additional luck benefit. The mechanism is unknown — M.E.G. researchers have verified the statistical effect through controlled trials (wanderers who drank Lucky O' Milk found exits 340% faster than a control group), but they cannot explain how a liquid alters probability. One theory is that it enhances subconscious pattern recognition, allowing the brain to unconsciously identify optimal paths. Another is that it genuinely alters the Backrooms' probability field around the consumer. The luck deficit is equally real and equally inexplicable — during the crash, even reliable equipment malfunctions at statistically improbable rates.",
+    history: "Lucky O' Milk appeared in Backrooms vending machines without explanation, alongside other branded products that have no Frontrooms origin. The brand 'Lucky O'' has no trademark, no manufacturer, and no history outside the Backrooms. B.N.T.G. trades it at a moderate premium — approximately two Almond Water units per carton — and has developed 'luck timing' strategies for traders crossing dangerous levels: drink the milk six hours before entering the dangerous section, time the luck enhancement to cover the transit, and plan to be in a safe level before the crash hits. The Crimson Order has attempted to stockpile Lucky O' Milk for military advantage but found that the crash period made their soldiers more vulnerable than the boost made them effective. Strategic use remains individual rather than institutional.",
+    foundIn: ["level-4", "level-11", "level-37", "the-hub"],
+    tags: ["consumable", "luck", "double-edged", "strategic"]
+  },
+  {
+    id: "cashew-water",
+    name: "Cashew Water",
+    danger: 3,
+    classification: "Unsafe",
+    description: "Cashew Water resembles Almond Water but has a slightly yellowish tint and tastes of cashews. It is a dangerous counterfeit that accelerates sanity loss instead of curing it. Wanderers who drink Cashew Water experience vivid hallucinations, paranoia, and aggressive behavior. Multiple doses can trigger permanent psychosis. It is sometimes deliberately placed by hostile entities or factions to deceive wanderers. The difference between Almond Water and Cashew Water is subtle enough to be missed by a dehydrated, desperate wanderer — exactly the kind of person most likely to grab the first liquid they find. The yellow tint is only visible in good lighting; in the dim conditions of most levels, it appears identical to Almond Water. The taste difference — cashew rather than almond — is the most reliable identifier, but by the time you taste it, you've already consumed some. Experienced wanderers always smell before drinking: Almond Water has a clean, slightly sweet scent, while Cashew Water has a faintly acrid, chemical undertone.",
+    effects: "Causes immediate hallucinations lasting 4-8 hours. Induces paranoia and aggression. Accelerates sanity degradation. Three doses within a week causes irreversible psychological damage. Can be identified by its slightly yellow tint and cashew flavor — always check before drinking clear liquids in the Backrooms. The hallucinations are vivid and personally targeted — victims see entities that aren't there, hear threats from walls, and become convinced that their companions are Skin-Stealers. The paranoia and aggression have caused wanderers under Cashew Water influence to attack their own groups. M.E.G. medical teams treat mild exposure with large doses of genuine Almond Water, which partially counteracts the effects. Severe or repeated exposure has no known treatment. The Unbound have been confirmed to place Cashew Water in Survivor supply caches, replacing Almond Water with the counterfeit — an act that every other faction, including the Crimson Order, has condemned.",
+    history: "Cashew Water's origin is unknown — it appears naturally in hostile levels, pooling in containers and bottles that mimic Almond Water packaging. M.E.G. chemists have analyzed it extensively and found that it shares 70% of Almond Water's chemical signature but with critical differences: the compounds that restore mental clarity are replaced by compounds that degrade it. This suggests Cashew Water is not merely a different substance but a corrupted or inverted version of Almond Water — the same base formula modified to cause harm rather than healing. This inversion supports the theory that the Backrooms contains deliberate traps alongside its provisions, as though designed by something that understands both mercy and cruelty. The Survivors have developed a field-testing protocol: dipping a strip of clean white cloth in the liquid — Almond Water leaves no residue, while Cashew Water leaves a faint yellow stain.",
+    foundIn: ["level-2", "level-5", "level-6", "level-9"],
+    tags: ["consumable", "dangerous", "counterfeit", "psychological"]
+  },
+  {
+    id: "liquid-pain",
+    name: "Liquid Pain",
+    danger: 4,
+    classification: "Hostile",
+    description: "Liquid Pain is a thick, dark red substance found in jars and pools in hostile levels. Contact with skin causes excruciating pain without physical damage — pure, distilled agony. It is used by hostile factions as a torture instrument and by some entities as a territorial marker. In small, diluted amounts, it can be used to stay awake during critical situations, as the pain overrides fatigue completely. The substance has the consistency of heavy syrup and the color of dark arterial blood. It has no smell. In jars, it is perfectly still — it doesn't slosh or settle, maintaining its position as though it has higher viscosity than its actual flow properties suggest. Pools of Liquid Pain in hostile levels are often found near entity territorial boundaries, suggesting entities use it as a natural fence line. Contact produces immediate, searing pain that victims universally describe as 'the worst thing I have ever felt' — not a burning or a stabbing, but a pain that seems to affect every nerve simultaneously.",
+    effects: "Skin contact causes intense pain lasting 2-3 hours with no physical injury. Ingestion causes internal pain severe enough to cause unconsciousness. When diluted 100:1 with Almond Water, it creates a stimulant that prevents sleep for 24 hours (with significant discomfort). Undiluted, it can be used to create painful area-denial zones against entities. The Crimson Order uses diluted Liquid Pain as a combat stimulant for their soldiers during prolonged operations — the low-grade pain keeps them alert and aggressive. M.E.G. medical researchers have studied the substance's mechanism and discovered that it doesn't cause pain in the traditional sense — it directly stimulates pain-processing regions of the brain without any peripheral nerve activation. This means analgesics and painkillers are ineffective. Only Almond Water provides partial relief. The substance affects entities as well as humans, making it one of the few area-denial tools effective against all biological threats.",
+    history: "Liquid Pain was first documented by a Crimson Order scouting party in Level 5 that stumbled into a pool of it in a hotel basement. The scout who made contact screamed for over an hour despite having no visible injuries. The Crimson Order immediately recognized its tactical potential and began collecting it in sealed jars. They developed the dilution protocol through painful trial and error — early attempts at higher concentrations left test subjects incapacitated rather than stimulated. B.N.T.G. trades Liquid Pain at a premium, primarily to the Crimson Order and Backrooms Robotics (who use it in entity deterrent systems). The Kalag claim that Liquid Pain is the 'blood of the Backrooms' — the literal physical pain of the reality manifested as substance. M.E.G. classifies it as a Backrooms-native compound with no Frontrooms analogue.",
+    foundIn: ["level-5", "level-6", "level-666", "level-389"],
+    tags: ["substance", "pain", "weapon", "tactical"]
+  },
+  {
+    id: "memory-jar",
+    name: "Memory Jar",
+    danger: 2,
+    classification: "Caution",
+    description: "Memory Jars are small, sealed glass jars containing swirling, luminous mist. Opening a jar releases a complete, vivid memory — but not your own. You experience someone else's memory as if you lived it. Some jars contain useful knowledge (level maps, entity weaknesses, exit locations). Others contain traumatic experiences that leave lasting psychological impact. There is no way to know the contents before opening. The jars are approximately the size of a baby food jar, made of thick glass with a cork stopper sealed with wax. The mist inside swirls in slow, hypnotic patterns and glows with a soft light that shifts color — warm gold for pleasant memories, cold blue for neutral ones, and deep violet for traumatic ones, though this color correlation was only discovered after extensive cataloging and is not immediately useful when the contents could be any shade. The mist dissipates within seconds of opening, absorbed through the skin and respiratory system to deliver its payload directly to the brain.",
+    effects: "Delivers a complete sensory memory experience lasting 30-60 seconds in real time but feeling much longer. Contents range from mundane to critical survival information to deeply traumatic experiences. The memory becomes permanently part of your own memory. Some wanderers become addicted to the experience, opening jar after jar. The Keymaster is believed to store traded memories in these jars. The Eternal Repository has cataloged over 150 opened jars' contents: approximately 40% contain mundane personal memories (a birthday, a conversation, a walk in the rain), 25% contain Backrooms navigation or survival information, 20% contain traumatic experiences (entity attacks, deaths, The Void), and 15% contain memories from entities or non-human perspectives that are deeply disorienting to experience. The addiction potential is significant — the experience of living someone else's memory is intensely compelling, and wanderers who open many jars begin to lose track of which memories are their own.",
+    history: "Memory Jars are found in Level 4 filing cabinets, Level 998 building alcoves, Level 188 window ledges, and The Hub's central table drawer. The connection to The Keymaster is widely accepted: the entity trades keys for memories, and the memories appear in jars distributed throughout the Backrooms. This creates an uncomfortable economy — every Memory Jar you open contains something precious that someone else lost. The Eternal Repository maintains the largest collection of unopened jars, arguing that they should be preserved rather than consumed. They have developed a non-destructive classification method using the mist's color and movement patterns to estimate content type without opening. B.N.T.G. trades them at varying prices depending on color — gold-mist jars command premium prices for their likely-pleasant contents, while violet-mist jars are cheap or unsaleable.",
+    foundIn: ["level-4", "level-998", "level-188", "the-hub"],
+    tags: ["container", "memory", "information", "risk-reward"]
+  },
+  {
+    id: "object-7-the-key",
+    name: "Object 7 (The Key)",
+    danger: 2,
+    classification: "Caution",
+    description: "Object 7 is a brass key of unremarkable appearance that opens any door in the Backrooms — but never the same door twice. Each use reveals a door to a random level. The key is warm to the touch and vibrates slightly when near a door it hasn't yet opened. It is one of the most sought-after objects in the Backrooms, and its current location is unknown. Multiple factions have fought over it. The key is approximately 8 centimeters long, made of tarnished brass, with a simple bow and a bit pattern that appears different every time you look at it closely — as though the key reshapes itself to match whatever lock it is about to open. Its warmth is constant, approximately body temperature, and the vibration near unused doors is a gentle hum felt through the hand. Wanderers who have held it describe a subtle pull toward doors, as though the key itself wants to be used.",
+    effects: "Opens any locked door in the Backrooms, creating a passage to a random level. Each door can only be opened once by the key. The key vibrates when near unused doors. The destination level is random and may include dangerous levels. The key cannot open a path to the Frontrooms — this has been tested. It also cannot open The Door in Level 3999. The randomness of destinations has been statistically analyzed by M.E.G. using the 47 documented uses of the key: safe levels appeared 35% of the time, caution levels 30%, unsafe levels 20%, hostile levels 10%, and deadzones 5%. This distribution is more favorable than true randomness would produce, suggesting the key has a slight bias toward survivable destinations. The key cannot be destroyed, duplicated, or analyzed — it resists all attempts at examination beyond visual inspection.",
+    history: "Object 7's history reads like an adventure novel. It was first documented by a M.E.G. explorer who found it in a Level 0 desk drawer. She used it to escape a Smiler encounter, opening a closet door that led to Level 37. The key was subsequently stolen by a Crimson Order operative, who used it eleven times before losing it during a Hound attack in Level 2. It was recovered by B.N.T.G., who auctioned it — the winning bid was 200 units of Almond Water, the highest price ever paid for a single object. The buyer, a Backrooms Robotics engineer, attempted to study the key's mechanism and was found unconscious in The Hub with no memory of the previous three days and the key missing. It has since been sighted in Level 5 (a Masked Maiden was seen holding it), Level 998 (on an altar), and most recently in The Hub, sitting on the central table as though it had never left. Its current holder, if any, is unknown.",
+    foundIn: ["level-0", "level-5", "the-hub"],
+    tags: ["artifact", "unique", "key", "contested"]
+  },
+  {
+    id: "smiler-repellent",
+    name: "Smiler Repellent",
+    danger: 1,
+    classification: "Safe",
+    description: "Smiler Repellent is a chemical spray developed by M.E.G. researchers that deters Smilers for approximately 4 hours per application. The formula is based on concentrated Almond Water mixed with bioluminescent fungi extract from Level 8. It emits a faint glow when applied, which may be the active deterrent mechanism. M.E.G. distributes it freely at their outposts. The spray comes in small pressurized cans with a M.E.G. logo and is applied like insect repellent — sprayed on skin, clothing, and equipment. It has a faint, pleasant luminescence and smells of almonds and moss. The glow is subtle enough to not attract other entities but apparently bright enough to register in whatever sensory range Smilers operate in. The formula is M.E.G.'s most widely distributed invention and has saved hundreds of lives, particularly in Levels 2 and 6 where Smiler encounters are frequent and often fatal.",
+    effects: "Creates a protective aura approximately 3 meters in radius that Smilers will not enter. Lasts 4 hours per application. The slight glow provides minimal illumination. Does not work against any entity other than Smilers. Available at M.E.G. outposts in Levels 1, 4, and 11. M.E.G. Research has been attempting to develop variants that work against other entities — Hound Repellent (based on sound-dampening compounds) and Crawler Deterrent (based on surface-coating chemicals) — with limited success. The Smiler Repellent formula remains the only proven entity-specific deterrent. Application to open wounds enhances the effect's duration to approximately 6 hours, likely due to the Almond Water component entering the bloodstream. Some wanderers report a mild euphoria from prolonged exposure, attributed to the Almond Water absorption through the skin.",
+    history: "Smiler Repellent was developed by Dr. Sarah Kim, a M.E.G. biochemist who noticed that Smilers avoided areas where Almond Water had been spilled near bioluminescent fungi. Through systematic experimentation (conducted, terrifyingly, in Level 6 with volunteer Smiler-watchers), she developed the optimal concentration and delivery mechanism. The formula was refined over six months and eighteen trials, during which two researchers were injured but none killed — an impressive safety record for Level 6 work. Dr. Kim received M.E.G.'s highest commendation, and the formula was immediately put into mass production. B.N.T.G. requested manufacturing rights but M.E.G. refused, insisting the repellent be distributed freely as a public good. B.N.T.G. respects this decision, making it one of the few items they transport without charging a markup.",
+    foundIn: ["level-1", "level-4", "level-11"],
+    tags: ["tool", "repellent", "defensive", "meg-issue"]
+  },
+  {
+    id: "object-47-level-key",
+    name: "Object 47 (Level Key)",
+    danger: 1,
+    classification: "Safe",
+    description: "Level Keys are special key cards that guarantee passage to a specific level. Unlike Object 7, each Level Key has a destination etched into its surface. They are created by Backrooms Robotics through an unknown process and traded at extremely high prices. Each key works once before dissolving into dust. Having the right Level Key at the right time can mean the difference between life and death. The cards are the size of a standard credit card, made of a smooth, dark material that feels like glass but flexes slightly. The destination level's name and number are etched in luminous text that glows when the card is near a door. Each card also features a small geometric pattern unique to its destination — Level 37 cards show a wave pattern, Level 11 cards show a city skyline, Level 0 cards show a simple rectangle. The cards feel warm when functional and go cold after use, crumbling to fine grey dust within seconds.",
+    effects: "Swiping the card near any door transforms that door into a portal to the designated level. Single use — dissolves after activation. The transition is instant and safe. Cannot create paths to The Void or levels that don't exist. B.N.T.G. trades these as their highest-value commodity. The portal created is stable for approximately 30 seconds — enough time for a group to pass through. The destination is always a safe zone within the target level: Level Key users arrive near M.E.G. outposts, B.N.T.G. trading posts, or other established safe areas rather than random locations. This precision makes them vastly more reliable than Object 7's random destinations or Transporters' subconscious-influenced teleportation. Backrooms Robotics produces approximately 10-15 Level Keys per month. Demand always exceeds supply.",
+    history: "Level Keys are Backrooms Robotics' most valuable creation and their primary source of trade revenue. The manufacturing process is their most closely guarded secret — Dr. Tanaka personally oversees production and only three members of the organization know the full process. The technology is believed to involve crystallized data from Level 906's servers combined with materials from Level 998, suggesting that Backrooms Robotics has found a way to encode level coordinates into a physical medium. B.N.T.G. is the exclusive distributor, trading them at 20-50 units of Almond Water depending on destination (safe levels are cheaper, dangerous levels are more expensive due to lower demand). Emergency Level Keys to Level 37 or Level 11 are the most popular and frequently sell out. The Crimson Order has offered a standing bounty for anyone who can steal the manufacturing process — a bounty that Backrooms Robotics takes as both threat and compliment.",
+    foundIn: ["level-4", "level-11", "the-hub"],
+    tags: ["artifact", "key-card", "single-use", "valuable"]
+  },
+  {
+    id: "wormhole-liquid",
+    name: "Wormhole Liquid",
+    danger: 3,
+    classification: "Unsafe",
+    description: "Wormhole Liquid is an iridescent, mercury-like substance that creates temporary portals when poured on flat surfaces. The portal leads to another location in the same level — never a different level. The destination is semi-random but tends to be within a few kilometers of the origin. Portals last approximately 30 seconds before collapsing. The liquid is extremely rare and found only in small quantities. The substance resembles liquid mercury but with a constantly shifting rainbow iridescence that makes it hypnotic to watch. It has no measurable temperature, weight, or smell, yet it behaves like a liquid — it flows, pools, and can be contained in sealed vessels. When poured into a circle, the liquid snaps into a perfect geometric shape regardless of how carefully it was poured, then the enclosed surface becomes transparent, showing the destination before you step through. The portal shimmers at its edges with the same iridescent quality as the liquid itself.",
+    effects: "Creating a portal requires approximately 50ml of liquid poured in a circle on a flat surface. The portal connects to another location within the same level. Stepping through is safe but disorienting. Portals collapse after 30 seconds. Attempting to portal to a different level causes the liquid to evaporate harmlessly. Can be used for emergency escape from entity encounters. The destination tends to be relatively safer than the origin — portals opened while fleeing entities typically deposit users in empty rooms or corridors. This bias has been observed too consistently to be coincidental, suggesting the liquid has some awareness of the user's situation. The disorientation from transit lasts 10-15 seconds, during which the user experiences a sensation of being 'inside the walls' of the Backrooms — a brief, unsettling glimpse of the space between spaces that some wanderers compare to a micro-dose of The Void.",
+    history: "Wormhole Liquid was discovered by a Backrooms Robotics drone that observed a pool of the substance in Level 3 and inadvertently rolled through it, creating a portal that deposited the drone 3 kilometers away. Dr. Tanaka immediately recognized its potential and organized collection expeditions. The substance is extraordinarily rare — total known reserves across all factions amount to less than 2 liters. It cannot be manufactured, synthesized, or replicated. It appears naturally in Level 3's electrical rooms, Level 906's server aisles, and Level 998's crystal bridges, always in tiny quantities — a few drops here, a small puddle there. B.N.T.G. trades it by the milliliter at astronomical prices. The Crimson Order has used it in several military operations, creating escape portals for retreating soldiers. Backrooms Robotics is researching whether the liquid is related to the Backrooms' level-connection mechanism, theorizing that it may be a raw form of the same substance that creates doors between levels.",
+    foundIn: ["level-3", "level-906", "level-998"],
+    tags: ["substance", "teleportation", "rare", "tactical"]
+  },
+  {
+    id: "squirt-gun",
+    name: "Squirt Gun",
+    danger: 1,
+    classification: "Safe",
+    description: "Squirt Guns are toy water guns found throughout the Backrooms that have an unusual property: when filled with Almond Water, they become effective weapons against most entities. The pressurized Almond Water seems to cause pain or discomfort to hostile entities on contact. M.E.G. equips their scouts with Squirt Guns as standard-issue defensive equipment. They are surprisingly effective for something so absurd. The guns themselves are standard toy water pistols — brightly colored plastic in various styles, from small handgun-shaped models to larger pump-action super soakers. They appear in toy stores in Level 11, children's rooms in Level 9, and poolside racks in Level 33. No modification is needed — fill with Almond Water, pump, and shoot. The combination of deadly serious survival necessity and absurd toy aesthetics has made the Squirt Gun an iconic symbol of Backrooms culture. Wanderers have been known to customize their guns with paint, tape, and carved handles, turning them into personalized sidearms that double as morale-boosting conversation pieces.",
+    effects: "Fires pressurized Almond Water up to 10 meters. Causes pain and temporary retreat in most hostile entities. Especially effective against Partygoers (prevents conversion on contact areas), Smilers (disrupts their form), and Clumps (causes partial dissolution). Ineffective against The Thing on Level 7 and entities in Level 666. The absurdity of the weapon provides an unexpected morale boost. Backrooms Robotics has developed modified versions: the 'Soaker Mark II' with increased range (20 meters), the 'Fog Nozzle' attachment that creates an Almond Water mist barrier, and the 'Pressure Cannon' that delivers a concentrated blast capable of temporarily disrupting a Crawler's grip. The Crimson Order has adapted the technology to their crossbow bolts — Almond Water-filled capsules that burst on impact. Effectiveness varies by entity: Partygoers react most strongly (the Almond Water appears to disrupt their conversion chemistry), while entities native to the Backrooms' older levels (Level 998, Level 666) are barely affected, suggesting they predate Almond Water in the Backrooms' ecology.",
+    history: "The discovery that Almond Water damages entities was accidental — a wanderer in Level 2 tripped and splashed a Smiler with the contents of their water bottle, causing it to recoil and flee. This observation was reported to M.E.G., who organized controlled experiments (at safe distance, with heavy security). The results confirmed the effect, and M.E.G.'s engineering team searched for an effective delivery mechanism. Conventional containers were impractical. Backrooms Robotics suggested pressurized systems. A wanderer named Tom — a former summer camp counselor — pointed at a toy store in Level 11 and said, 'Why not those?' The Squirt Gun became M.E.G.'s first standard-issue weapon within a week. Tom was awarded an honorary M.E.G. commendation, which he accepted while dual-wielding neon-green super soakers. The image has become the unofficial mascot of M.E.G.'s Security division.",
+    foundIn: ["level-0", "level-4", "level-11", "level-37"],
+    tags: ["weapon", "defensive", "almond-water", "standard-issue"]
+  }
+]
+
+};
