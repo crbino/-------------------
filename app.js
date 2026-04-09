@@ -110,7 +110,7 @@
     const { tab, id } = parseHash();
 
     // Update tab
-    if (['levels', 'entities', 'groups', 'objects'].includes(tab)) {
+    if (['levels', 'entities', 'groups', 'objects', 'experience'].includes(tab)) {
       state.currentTab = tab;
     }
     state.currentItem = id;
@@ -125,7 +125,9 @@
     setTimeout(() => dom.content.classList.remove('glitch-transition'), 350);
 
     // Render
-    if (state.currentItem) {
+    if (state.currentTab === 'experience') {
+      renderExperienceView();
+    } else if (state.currentItem) {
       renderDetailView(state.currentTab, state.currentItem);
     } else {
       renderListView(state.currentTab);
@@ -158,6 +160,34 @@
     }
 
     return items;
+  }
+
+  // ── Render: Experience View ────────────────────────────────
+  function renderExperienceView() {
+    dom.listView.classList.add('hidden');
+    dom.detailView.classList.remove('hidden');
+    dom.detailView.innerHTML = `
+      <div class="experience-container">
+        <div class="detail-header">
+          <h2 class="detail-title glitch-text" data-text="EXPERIENCE LEVEL 0">EXPERIENCE LEVEL 0</h2>
+          <p class="detail-subtitle">Wander the mono-yellow halls. Find the EXIT.</p>
+        </div>
+        <div class="experience-info">
+          <p>A 3D first-person exploration of Level 0. Navigate the endless fluorescent corridors, damp carpet, and yellow wallpaper. Find the green EXIT door to escape.</p>
+          <div class="experience-controls">
+            <span class="control-key">WASD</span> Move
+            <span class="control-key">Shift</span> Sprint
+            <span class="control-key">E</span> Interact
+            <span class="control-key">H</span> Exit Arrow
+            <span class="control-key">Tab</span> Menu
+          </div>
+        </div>
+        <div class="experience-frame-wrap">
+          <iframe src="experience.html" class="experience-iframe" allowfullscreen></iframe>
+        </div>
+        <button class="experience-fullscreen-btn" onclick="document.querySelector('.experience-iframe').requestFullscreen()">ENTER FULLSCREEN</button>
+      </div>
+    `;
   }
 
   // ── Render: List View ──────────────────────────────────────
